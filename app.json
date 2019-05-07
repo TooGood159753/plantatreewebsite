@@ -11,7 +11,7 @@
   "website": "",
   "repository": "https://github.com/TooGood159753/plantatreewebsite",
   "logo": "",
-  "success_url": "/welcome",
+  "success_url": "/login",
   "scripts": {
     "postdeploy": "bundle exec rake bootstrap"
   },
@@ -31,7 +31,7 @@
       "size": "Performance-M"
     }
   },
-  "image": "heroku/nodejs",
+  "image": "heroku/php",
   "addons": [
     "openredis",
     {
@@ -47,7 +47,7 @@
   ],
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+      "url": "https://github.com/heroku/heroku-buildpack-php"
     }
   ],
   "environments": {
