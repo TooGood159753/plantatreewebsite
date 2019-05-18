@@ -53,8 +53,8 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "bundle exec rake test"
-      }
+  	"start": "node server.js"
+	}
     }
   }
 }
