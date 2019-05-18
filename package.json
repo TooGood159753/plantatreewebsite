@@ -2,7 +2,7 @@
     "name": "plant_a_tree",
     "description": "Plant A Tree Site",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
