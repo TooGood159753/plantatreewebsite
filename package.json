@@ -50,9 +50,7 @@
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
     }
   ],
-  "environments": {
-      "scripts": {
-  	"start": "node server.js"
-	}
-  }
+  "scripts": {
+ 	"start": "node server.js"
+    }
 }
