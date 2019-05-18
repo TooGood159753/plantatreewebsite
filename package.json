@@ -11,7 +11,7 @@
   "website": "",
   "repository": "https://github.com/TooGood159753/plantatreewebsite",
   "logo": "",
-  "success_url": "/login",
+  "success_url": "/login.html",
   "scripts": {
     "postdeploy": "bundle exec rake bootstrap"
   },
