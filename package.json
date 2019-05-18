@@ -13,7 +13,7 @@
   "logo": "",
   "success_url": "/login.html",
     "scripts": {
- 	"start": "node server.js"
+ 	"start": "node app.js"
    },
   "env": {
     "SECRET_TOKEN": {
