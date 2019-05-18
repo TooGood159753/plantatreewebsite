@@ -9,7 +9,7 @@
 	"tree"
   ],
   "website": "",
-  "repository": "https://github.com/TooGood159753/plantatreewebsite",
+  "repository": "https://github.com/TooGood159753/plantatreewebsite.git",
   "logo": "",
   "success_url": "/login.html",
   "scripts": {
