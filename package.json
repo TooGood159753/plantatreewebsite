@@ -11,7 +11,6 @@
   "website": "",
   "repository": "https://github.com/TooGood159753/plantatreewebsite.git",
   "logo": "",
-  "success_url": "/login.html",
     "scripts": {
  	"start": "node app.js"
    },
