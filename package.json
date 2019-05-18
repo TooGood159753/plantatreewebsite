@@ -12,9 +12,9 @@
   "repository": "https://github.com/TooGood159753/plantatreewebsite.git",
   "logo": "",
   "success_url": "/login.html",
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
-  },
+    "scripts": {
+ 	"start": "node server.js"
+   },
   "env": {
     "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
@@ -49,8 +49,5 @@
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
     }
-  ],
-  "scripts": {
- 	"start": "node server.js"
-    }
+  ]
 }
