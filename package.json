@@ -1,52 +1,20 @@
-{
-  "name": "Plant A Tree",
-  "description": "Web Application for Plant A Tree",
-  "keywords": [
-    "web",
-    "application",
-    "plant",
-	"a",
-	"tree"
-  ],
-  "website": "",
-  "repository": "https://github.com/TooGood159753/plantatreewebsite.git",
-  "logo": "",
+  {
+    "name": "plant_a_tree",
+    "description": "Plant A Tree Site",
+    "version": "1.0.0",
+    "main": "index.js",
     "scripts": {
- 	"start": "node app.js"
-   },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "5"
-    }
-  },
-  "formation": {
-    "web": {
-      "quantity": 2,
-      "size": "Performance-M"
-    }
-  },
-  "image": "heroku/nodejs",
-  "addons": [
-    "openredis",
-    {
-      "plan": "mongolab:shared-single-small",
-      "as": "MONGO"
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/TooGood159753/plantatreewebsite.git"
     },
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "9.5"
-      }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
-    }
-  ]
-}
+    "keywords": [],
+    "author": "Various",
+    "license": "ISC",
+    "bugs": {
+      "url": ""
+    },
+    "homepage": "https://github.com/TooGood159753/plantatreewebsite/login.html"
+  }
