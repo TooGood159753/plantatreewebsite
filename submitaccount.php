@@ -23,12 +23,13 @@
 	{
 			//redirect back to createaccount.php update text to error alert
 			$_SESSION["message"] = "User Database Connection Failure.";
-			header("location:createaccount.php");
+			//header("location:createaccount.php");
 	}
 	else
 	{
-	
-
+			$_SESSION["message"] = "working";
+	}
+	/*
 	$result = mysqli_query($conn, $query);
 
 	if(!result)
@@ -44,5 +45,6 @@
 			header("location:index.php");
 		}
 	}
+	*/
 
 ?>
