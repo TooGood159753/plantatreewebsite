@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$message = "";
 
 	$host = "cmslamp14.aut.ac.nz";
 	$user = "kyg8185";
@@ -16,7 +17,7 @@
 	);
 	
 	//Write query get user database to begin check/
-	$query = "SELECT * FROM user;";
+	$query = "SELECT * FROM users;";
 	
 	if(!$conn)
 	{

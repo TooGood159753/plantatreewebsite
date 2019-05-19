@@ -5,6 +5,7 @@
 
 <?php
 	session_start();
+	$message = "";
 ?>
 
 <body>
@@ -13,7 +14,7 @@
 <a href = "createaccount.php">Create Account</a>
 
 <!-- add 'login.php' to action when its ready to do the check -->
-<form method="post" action="">
+<form method="post" action="login.php">
 		<p>	<label for="uname">Enter User Name: </label>
 			<input type="text" name="uname" id="uname" /></p>
 		<p>	<label for="pword">Enter Password: </label>

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$_SESSION["message"] = "";
 
 	$host = "cmslamp14.aut.ac.nz";
 	$user = "kyg8185";
@@ -17,13 +18,13 @@
 	);
 	
 	//Write query to insert into user database/
-	$query = "INSERT INTO user(username, password, email) VALUES ('$uname','$pword','$email');";
+	$query = "INSERT INTO users(username, password, email) VALUES ('$uname','$pword','$email');";
 	
 	if(!$conn)
 	{
 			//redirect back to createaccount.php update text to error alert
+			$_SESSION["message"] = "User Database Connection Failure.";
 			header("location:createaccount.php");
-			$_SESSION["message"] = "";
 	}
 	else
 	{
@@ -34,11 +35,13 @@
 	if(!result)
 		{
 			//redirect back to createaccount.php update text with error alert
+			$_SESSION{"message"] = "Account Creation Was A Failure Due To Unknown Reasons";
 			header("location:createaccount.php");
 		}
 	else
 		{
 			//redirect to index.php update text with confirmation alert
+			$_SESSION{"message"] = "Account Creation Was Successful";
 			header("location:index.php");
 		}
 	}

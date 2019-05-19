@@ -4,12 +4,13 @@
 <html>
 	<?php
 	session_start();
+	$message = "";
 	?>
 <body>
 <p>create account</p>
 
 <!--Enter 'submitaccount.php' in action when its ready -->
-<form method="post" action="">
+<form method="post" action="submitaccount.php">
 		<p>	<label for="uname">Enter a User Name: </label>
 			<input type="text" name="uname" id="uname" /></p>
 		<p>	<label for="pword">Enter a Password: </label>
