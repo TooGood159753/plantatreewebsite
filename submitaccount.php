@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	$_SESSION["message"] = "";
 
 	$host = "cmslamp14.aut.ac.nz";
 	$user = "kyg8185";

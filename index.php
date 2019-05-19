@@ -5,13 +5,17 @@
 
 <?php
 	session_start();
-	$message = "";
+	$_SESSION["message"] = "";
 ?>
 
 <body>
 <p>login</p>
 <a href = "main.php">Main</a>
 <a href = "createaccount.php">Create Account</a>
+
+<?php
+echo "<p>"+$_SESSION["message"]+"</p>";
+?>
 
 <!-- add 'login.php' to action when its ready to do the check -->
 <form method="post" action="login.php">
