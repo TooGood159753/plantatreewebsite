@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 
-<?php
 
-	//session_start();
-	$message = ;
-
-?>
 <html>
+	<?php
+	session_start();
+	?>
 <body>
 <p>create account</p>
 
