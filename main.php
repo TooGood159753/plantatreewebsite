@@ -2,8 +2,8 @@
 <html>
 <body>
 	<p>index</p>
-  <a href = "shiplocation.html">Ship Location</a>
-  <a href = "profile.html">Profile</a>
+  <a href = "shiplocation.php">Ship Location</a>
+  <a href = "profile.php">Profile</a>
   <a href = "index.php">Logout</a>
   
   <?php
