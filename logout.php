@@ -2,6 +2,6 @@
 <html>
 <body>
 <p>logout</p>
-<a href = "main.php">Login</a>
+<a href = "index.php">Login</a>
 </body>
 </html>
