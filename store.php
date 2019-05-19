@@ -2,7 +2,7 @@
 <html>
 <body>
 <p>store</p>
-<a href = "purchace.html">Purchace</a>
+<a href = "purchace.php">Purchace</a>
 <a href = "main.php">Main</a>
 </body>
 </html>
