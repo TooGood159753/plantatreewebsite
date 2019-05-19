@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	//session_start();
 
 	$host = "cmslamp14.aut.ac.nz";
 	$user = "kyg8185";
