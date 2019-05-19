@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+	session_start();
+?>
+
 <body>
 	<p>index</p>
   <a href = "shiplocation.php">Ship Location</a>

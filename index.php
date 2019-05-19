@@ -2,6 +2,11 @@
 
 
 <html>
+
+<?php
+	session_start();
+?>
+
 <body>
 <p>login</p>
 <a href = "main.php">Main</a>
