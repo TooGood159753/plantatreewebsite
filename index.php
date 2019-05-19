@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<?php
- //session_start(); 
- $loginuname = ;
- $message = ;
- 
-?>
+
 
 <html>
 <body>
