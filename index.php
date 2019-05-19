@@ -10,7 +10,7 @@
 <body>
 <p>login</p>
 <a href = "main.php">Main</a>
-<a href = "createaccount.html">Create Account</a>
+<a href = "createaccount.php">Create Account</a>
 
 <!-- add 'login.php' to action when its ready to do the check -->
 <form method="post" action="">
