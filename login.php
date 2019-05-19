@@ -3,7 +3,10 @@
 	$user = "kyg8185";
 	$pswd = "catface1one1";
 	$dbnm = "kyg8185";
-
+	
+	$uname = ;
+	$pword = ;
+	
 	$conn = @mysqli_connect($host,
 		$user,
 		$pswd,
@@ -11,7 +14,7 @@
 	);
 	
 	//Write query get user database to begin check/
-	$query = ;
+	$query = "SELECT * FROM user WHERE username = " + + " AND password = " + + ";";
 	
 	if(!$conn)
 	{

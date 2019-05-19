@@ -3,7 +3,10 @@
 	$user = "kyg8185";
 	$pswd = "catface1one1";
 	$dbnm = "kyg8185";
-
+	
+	$uname = ;
+	$pword = ;
+	
 	$conn = @mysqli_connect($host,
 		$user,
 		$pswd,
