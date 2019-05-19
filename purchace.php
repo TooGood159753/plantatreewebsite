@@ -3,6 +3,6 @@
 <body>
 <p>buy</p>
 <a href = "main.php">Main</a>
-<a href = "rate.html">Rate</a>
+<a href = "rate.php">Rate</a>
 </body>
 </html>
