@@ -6,7 +6,7 @@ div.fixed {
   width: 200px;
   height: 100px;
   }
-div.absolute{
+a.button{
   position: absolute;
   top: 0px;
   right: -50px;
