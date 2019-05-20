@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html>
 
@@ -14,5 +15,11 @@
 <div class="fixed"
 <a href="store.php">Cart</a><br>
 </div>	
+
+<div class="absolute"
+<a href="profile.php">Account</a><br>
+</div>
+
+
 </body>
 </html>
