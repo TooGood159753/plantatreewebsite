@@ -16,9 +16,7 @@
 <a href="store.php">Cart</a><br>
 </div>	
 
-<div class="absolute"
-<a href="profile.php">Account</a><br>
-</div>
+<a href="profile.php" class="button">Account</a><br>
 
 
 </body>
