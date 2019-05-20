@@ -17,6 +17,7 @@
 </div>	
 
 <a href="profile.php" class="button">Account</a><br>
+<a herf="main.php" class="buttob">Home</a><br>
 
 
 </body>
