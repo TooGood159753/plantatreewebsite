@@ -74,7 +74,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($resultgarden)) 
 				{
-					echo "<tr><td>",$row["productname"],"</td><td>",$row["productdesc"],"</td><td><form action='item.php' method='post'><input type='submit' value='",$row["productname"],", id='buying''><button>Buy</button></form></td></tr>";
+					echo "<tr><td>",$row["productname"],"</td><td>",$row["productdesc"],"</td><td><form action='item.php' method='post'><input type='submit' value='",$row["productname"],", id='buying''></form></td></tr>";
 				}
 				echo "</table>";
 			}
