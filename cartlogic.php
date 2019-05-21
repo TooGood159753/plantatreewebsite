@@ -36,15 +36,16 @@
 		$result = mysqli_query($conn, $query);
 		
 		
-		if(!$result)
+		if($result)
 		{
-			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
+			
+			$_SESSION["messagealt"] = "Your Order Had Been Placed, Go To Your Account Page To See Your Order History"; //Order Made/Added To Database
 			header('location:cart.php');
 			exit;
 		}
 		else
 		{
-			$_SESSION["messagealt"] = "Your Order Had Been Placed, Go To Your Account Page To See Your Order History"; //Order Made/Added To Database
+			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
 			header('location:cart.php');
 			exit;
 		}
