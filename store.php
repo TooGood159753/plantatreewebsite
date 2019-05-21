@@ -14,11 +14,11 @@
 <h1>Plant a Tree </h1>
 <div class="fixed"
 <a href="store.php">Cart</a><br>
-<a herf="main.php" class="button">Home</a><br>
+
 </div>	
 
-<a href="profile.php" class="button2">Account</a><br>
-
+<a href="profile.php" class="button">Account</a><br>
+<!-- <a herf="main.php" class="button">Home</a><br> -->
 
 
 </body>
