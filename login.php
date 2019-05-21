@@ -1,7 +1,15 @@
 <?php
 	session_start();
-	$_SESSION["username"] = "";
-	$_SESSION["userid"] = "";
+	
+	if (!isset ($_SESSION["username"])) 
+	{ 
+		$_SESSION["username"] = ""; 
+	}
+	if (!isset ($_SESSION["password"])) 
+	{ 
+		$_SESSION["password"] = ""; 
+	}
+
 
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";

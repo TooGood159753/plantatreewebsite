@@ -5,7 +5,11 @@
 
 <?php
 	session_start();
-	$_SESSION["message"] = " ";
+	if (!isset ($_SESSION["message"])) 
+	{ 
+		$_SESSION["message"] = "";
+	}
+
 ?>
 
 <body>
@@ -25,7 +29,7 @@
 </form>
 
 <?php
-	//echo "<p>"+$_SESSION["message"]+"</p>";
+	echo "<p>"+$_SESSION["message"]+"</p>";
 ?>
 	
 </body>
