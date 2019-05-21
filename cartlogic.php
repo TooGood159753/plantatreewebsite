@@ -35,7 +35,6 @@
 		
 		$result = mysqli_query($conn, $query);
 		
-		echo "<a href='main.php'>Click Here To Return To Main Page</a>";
 		/*
 		if(!$result)
 		{
