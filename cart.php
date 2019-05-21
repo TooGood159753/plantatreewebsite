@@ -1,8 +1,8 @@
-<html>
+
 <?php
 	session_start();
 	
-	/*
+	
 	echo "<p>",$_SESSION["chosenstore"],"</p>";
 	echo "<p>",$_SESSION["username"],"</p>";
 	echo "<p>",$_SESSION["userid"],"</p>";
@@ -10,7 +10,7 @@
 	echo "<p>",$_SESSION["item2"],"</p>";
 	echo "<p>",$_SESSION["item3"],"</p>";
 	echo "<p>",$_SESSION["item4"],"</p>";
-	*/
+	
 	
 	echo "<p>Test</p>";
 	
@@ -19,13 +19,13 @@
 	$pswd = "3ce40478";
 	$dbnm = "heroku_26350cbea1b7381";
 	
-	
+	/*
 	$conn = @mysqli_connect($host,
 		$user,
 		$pswd,
 		$dbnm
 	);
-	
+	*/
 	$query = "INSERT INTO purchases(storename,username,userid,item1,item2,item3,item4) VALUES (",$_SESSION["chosenstore"],",
 																								",$_SESSION["username"],",
 																								",$_SESSION["userid"],",
@@ -35,4 +35,3 @@
 																								",$_SESSION["item4"],")";
 	
 ?>
-</html>
