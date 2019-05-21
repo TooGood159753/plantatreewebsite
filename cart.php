@@ -1,8 +1,8 @@
 <html>
 <?php
-	
 	session_start();
 	
+	/*
 	echo "<p>",$_SESSION["chosenstore"],"</p>";
 	echo "<p>",$_SESSION["username"],"</p>";
 	echo "<p>",$_SESSION["userid"],"</p>";
@@ -10,6 +10,9 @@
 	echo "<p>",$_SESSION["item2"],"</p>";
 	echo "<p>",$_SESSION["item3"],"</p>";
 	echo "<p>",$_SESSION["item4"],"</p>";
+	*/
+	
+	echo "<p>Test</p>";
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
