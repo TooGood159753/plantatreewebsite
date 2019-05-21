@@ -1,14 +1,19 @@
 <?php
 	session_start();
-
-	$host = "cmslamp14.aut.ac.nz";
-	$user = "kyg8185";
-	$pswd = "catface1one1";
-	$dbnm = "kyg8185";
 	
 	$uname = $_POST["uname"];
 	$pword = $_POST["pword"];
 	$email = $_POST["email"];
+	
+	$host = "us-cdbr-iron-east-02.cleardb.net";
+	$user = "b74160f7bd6416";
+	$pswd = "3ce40478";
+	$dbnm = "heroku_26350cbea1b7381";
+	
+	if(isset($_SESSION["messagealt"]))
+	{
+		$_SESSION["messagealt"] = "  ";
+	}
 	
 	$conn = @mysqli_connect($host,
 		$user,
@@ -16,37 +21,39 @@
 		$dbnm
 	);
 	
-	//Write query to insert into user database/
-	$query = "INSERT INTO users(username, password, email) VALUES ('$uname','$pword','$email');";
 	
 	if(!$conn)
 	{
-			//redirect back to createaccount.php update text to error alert
-			$_SESSION["message"] = "User Database Connection Failure.";
-			echo "<p>Failed connection</p>";
-			//header("location:createaccount.php");
+		$_SESSION["messagealt"] = "Error Connecting To The Order Database."; //Error cnnecting to DB
+		header('location:cart.php');
+		exit;
 	}
 	else
 	{
-			$_SESSION["message"] = "working";
-			echo "<p>Connection Successful</p>";
-	}
-	/*
-	$result = mysqli_query($conn, $query);
-
-	if(!result)
+		
+		
+		$query = "INSERT INTO user(username,password,email) VALUES ('$uname','$pword','$email')";
+		
+		
+		$result = mysqli_query($conn, $query);
+		
+		/*
+		if($result)
 		{
-			//redirect back to createaccount.php update text with error alert
-			$_SESSION{"message"] = "Account Creation Was A Failure Due To Unknown Reasons";
-			header("location:createaccount.php");
+			
+			$_SESSION["messagealt"] = "Your Order Had Been Placed, Go To Your Account Page To See Your Order History"; //Order Made/Added To Database
+			header('location:cart.php');
+			exit;
 		}
-	else
+		else
 		{
-			//redirect to index.php update text with confirmation alert
-			$_SESSION{"message"] = "Account Creation Was Successful";
-			header("location:index.php");
+			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
+			header('location:cart.php');
+			exit;
 		}
+		*/
+		
+		
 	}
-	*/
 
 ?>
