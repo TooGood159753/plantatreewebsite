@@ -6,10 +6,11 @@
 	{ 
 		$_SESSION["username"] = ""; 
 	}
-	if (!isset ($_SESSION["password"])) 
+	if (!isset ($_SESSION["userid"])) 
 	{ 
-		$_SESSION["password"] = ""; 
+		$_SESSION["userid"] = ""; 
 	}
+	
 
 	$testcodeno = 0;
 	

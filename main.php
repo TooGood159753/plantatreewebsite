@@ -14,8 +14,8 @@
   <h2>Welcome to Plant a Tree</h2>
   <?php
   echo "<p>PHP is working</p>";
-  echo "<p>"+$_SESSION["username"]+"</p>";
-  echo "<p>"+$_SESSION["password"]+"</p>";
+  echo "<p>",$_SESSION["username"],"</p>";
+  echo "<p>",$_SESSION["userid"],"</p>";
   ?>
 </body>
 </html>

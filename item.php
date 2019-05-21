@@ -50,6 +50,7 @@
 						echo "<p>",$row["treedesc"],"</p>";
 						
 						echo "<a href='main.php'>Home</a>";
+						echo "<p>-------</p>";
 						echo "<a href='store.php'>Store</a>";
 					}
 				}
@@ -71,6 +72,7 @@
 					}
 				}
 			}
+			//add to cart with session variables, check if session variable is full them move to next if so, if all 4 full them cant add to cart.
 		}
 	}
 ?>

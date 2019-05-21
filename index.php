@@ -31,7 +31,7 @@
 </form>
 
 <?php
-	echo "<p>"+$_SESSION["message"]+"</p>";
+	echo "<p>",$_SESSION["message"],"</p>";
 ?>
 	
 </body>
