@@ -31,7 +31,7 @@
 	
 	$result = mysqli_query($conn, $query);
 
-	if(!result)
+	if(!$result)
 		{
 			//auto redirects back to login page (index.php) update text for fail condition
 			//header("location:index.php");
@@ -39,19 +39,20 @@
 		}
 	else
 		{
+			echo "<p>Got Information</p>";
 			//check username and password against results
-			//if()
-			//{
+			if($result["username"] == $username && $result["password"] == $password)
+			{
 			//fail conditions goes here and auto redirects back to login page (index.php) update text for fail condition
 			//header("location:index.php");
-			//echo "<p>User Found</p>";
-			//}
-			//else
-			//{
+			echo "<p>User Found</p>";
+			}
+			else
+			{
 			//redirect to main page (main.php)
 			//header("location:main.php");
-			//echo "<p>No User Found</p>";
-			echo "<p>Got Information</p>";
+			echo "<p>No User Found</p>";
+			
 			
 		}
 	}
