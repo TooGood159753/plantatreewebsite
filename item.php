@@ -45,7 +45,7 @@
 				{
 					if($buycodetree === $row["treename"])
 					{
-						echo "<img src='/",$row["treeimglnk"],"' alt='",$row["treename"],"' height='100' width='100'>";
+						echo "<img src='image/",$row["treeimglnk"],"' alt='",$row["treename"],"' height='100' width='100'>";
 						echo "<h2>",$row["treename"],"</h2>";
 						echo "<p>",$row["treedesc"],"</p>";
 					}
@@ -58,7 +58,7 @@
 				{
 					if($buycodegarden === $row["productname"])
 					{
-						echo "<img src='/",$row["prodimglnk"],"' alt='",$row["productname"],"' height='100' width='100'>";
+						echo "<img src='image/",$row["prodimglnk"],"' alt='",$row["productname"],"' height='100' width='100'>";
 						echo "<h2>",$row["productname"],"</h2>";
 						echo "<p>",$row["productdesc"],"</p>";
 					}
