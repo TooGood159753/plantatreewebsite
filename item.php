@@ -72,7 +72,7 @@
 					}
 				}
 			}
-			//add to cart with session variables, check if session variable is full them move to next if so, if all 4 full them cant add to cart.
+			echo "<a href='addtocart.php'>Add To Cart</a>";
 		}
 	}
 ?>
