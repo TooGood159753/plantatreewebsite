@@ -2,10 +2,10 @@
 	session_start();
 	$message = "";
 
-	$host = "cmslamp14.aut.ac.nz";
-	$user = "kyg8185";
-	$pswd = "catface1one1";
-	$dbnm = "kyg8185";
+	$host = "us-cdbr-iron-east-02.cleardb.net";
+	$user = "b74160f7bd6416";
+	$pswd = "3ce40478";
+	$dbnm = "heroku_26350cbea1b7381";
 	
 	$username = $_POST["uname"];
 	$password = $_POST["pword"];
@@ -21,13 +21,14 @@
 	
 	if(!$conn)
 	{
-			echo "<p>Error Connecting to The User Database, Follow The Link Below To Return To The Login Page</p>";
-			echo "<a href = 'index.php'>Login</a>";
+		echo "<p>Error Connecting to The User Database, Follow The Link Below To Return To The Login Page</p>";
+		echo "<a href = 'index.php'>Login</a>";
 	}
 	else
 	{
-	
-
+		echo "<p>Connection Successful</p>";
+	}
+	/*
 	$result = mysqli_query($conn, $query);
 
 	if(!result)
@@ -50,5 +51,6 @@
 			}
 		}
 	}
+	*/
 
 ?>
