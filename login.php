@@ -46,7 +46,8 @@
 			//auto redirects back to login page (index.php) update text for fail condition
 			//header("location:index.php");
 			$_SESSION["message"] = "No Results";
-			header("location:index.php");
+			//header("location:index.php");
+			header("location:main.php");
 		}
 	else
 		{
