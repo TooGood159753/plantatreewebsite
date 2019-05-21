@@ -34,7 +34,7 @@
 	else
 	{
 	
-	$result = mysqli_query($conn, $querytree);
+	$result = mysqli_query($conn, $query);
 
 	if(!$result)
 		{
