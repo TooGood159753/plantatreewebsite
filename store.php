@@ -5,10 +5,7 @@
 <?php
 	session_start();
 	
-	$_SESSION["item1"] = "";
-	$_SESSION["item2"] = "";
-	$_SESSION["item3"] = "";
-	$_SESSION["item4"] = "";
+
 	$_SESSION["chosenstore"] = $_POST["storepass"];
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
