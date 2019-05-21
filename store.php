@@ -48,8 +48,8 @@
 	else
 	{
 	
-	$resulttrees = mysqli_query($conn, $query);
-	$resultgarden = mysqli_query($conn, $query);
+	$resulttrees = mysqli_query($conn, $querytree);
+	$resultgarden = mysqli_query($conn, $querygarden);
 
 	if(!$resulttrees || !$resultgarden)
 		{
