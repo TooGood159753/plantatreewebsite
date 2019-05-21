@@ -72,7 +72,7 @@
 			{
 				echo "<h2>Gardening Supplies</h2>";
 				echo "<table border='1'>";
-				while($row = $resulttrees-> fetch_assoc()) 
+				while($row = $resultgarden-> fetch_assoc()) 
 				{
 					echo "<tr><td>"+$row["productname"]+"</td><td>"+$row["productdesc"]+"</td></tr>";
 				}
