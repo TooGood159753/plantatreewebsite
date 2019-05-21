@@ -64,7 +64,7 @@
 				while($row = mysqli_fetch_assoc($resulttrees))
 				{
 					echo "<p>------------------------------------------------------------------------------------------</p>";
-					echo "<p>"+$row["treename"]+$row["treetype"]+$row["treedesc"]+"</p>";
+					echo "<p>"+$row["treename"]+"</p><br>"+"</p>"+$row["treetype"]+"</p><br>"+"</p>"+$row["treedesc"]+"</p>";
 				}
 				
 			}
@@ -75,7 +75,7 @@
 				while($row = mysqli_fetch_assoc($resultgarden))
 				{
 					echo "<p>------------------------------------------------------------------------------------------</p>";
-					echo "<p>"+$row["productname"]+$row["productdesc"]+"</p>";
+					echo "<p>"+$row["productname"]+"</p><br>"+"</p>"+$row["productdesc"]+"</p>";
 				}
 			}
 		}
