@@ -9,6 +9,7 @@
 	$_SESSION["item2"] = "";
 	$_SESSION["item3"] = "";
 	$_SESSION["item4"] = "";
+	$_SESSION["chosenstore"] = $_POST["storepass"];
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -29,6 +30,7 @@
 </head>
 <body>
 <h1>Plant a Tree </h1>
+<h3>Chosen Store: <?php echo $_SESSION["chosenstore"]; ?></h3>
  
 <a href="cart.php" class="fixed">Cart</a><br>
 
