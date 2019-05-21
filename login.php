@@ -50,7 +50,7 @@
 						$_SESSION["message"] = "User Located</p>";
 						$_SESSION["username"] = $row["username"];
 						$_SESSION["userid"] = $row["userid"];
-						header("location:index.php");
+						header("location:main.php");
 					}
 					else
 					{
