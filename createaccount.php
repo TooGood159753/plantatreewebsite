@@ -6,8 +6,8 @@
 	session_start();
 	$message = "";
 	?>
-<body>
-<p>create account</p>
+<body bgcolor="#E6E6FA">
+<p><u>Create Account</u></p>
 
 <!--Enter 'submitaccount.php' in action when its ready -->
 <form action="/submitaccount.php" method="post">
