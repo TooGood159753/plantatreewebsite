@@ -34,7 +34,7 @@
 		$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES('test','test','1','q','w','e','r','2')";
 		
 		$result = mysqli_query($conn, $query);
-
+		/*
 		if(!$result)
 		{
 			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
@@ -47,6 +47,7 @@
 			header('location:cart.php');
 			exit;
 		}
+		*/
 		
 	}
 ?>
