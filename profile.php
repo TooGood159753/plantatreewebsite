@@ -29,7 +29,7 @@
 	if(!$conn)
 	{
 		echo "<p>Could Not Retrieve Database</p>";
-		exit;
+		
 	}
 	else
 	{
@@ -44,7 +44,7 @@
 		{
 			if(mysqli_num_rows($result) > 0)
 			{
-				echo "<h2>Trees</h2>";
+				echo "<h2>Purchases</h2>";
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($result)) 
 				{
