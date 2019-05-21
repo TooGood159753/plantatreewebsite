@@ -31,7 +31,8 @@
 	if(!$conn)
 	{
 		$_SESSION["message"] = "Error Connecting to The User Database, Follow The Link Below To Return To The Login Page";
-		header("location:index.php");
+		//header("location:index.php");
+		header("location:main.php");
 	}
 	else
 	{
