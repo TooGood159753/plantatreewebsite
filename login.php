@@ -44,10 +44,7 @@
 			{
 				while($row = mysqli_fetch_assoc($result)
 				{
-					if($row["username"] === $username)
-					{
-						echo "<p>Specific User Found</p>";
-					}
+					echo "<p>TEST</p>";
 				}
 			}
 		}
