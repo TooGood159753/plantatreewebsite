@@ -24,7 +24,7 @@
 		<p>	<label for="uname">Enter User Name: </label>
 			<input type="text" name="uname" id="uname" /></p>
 		<p>	<label for="pword">Enter Password: </label>
-			<input type="text" name="pword" id="pword" /></p>
+			<input type="password" name="pword" id="pword" /></p>
         <p>	<input type="submit" value="Submit" /></p>
 </form>
 
