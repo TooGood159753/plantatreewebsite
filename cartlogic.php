@@ -19,6 +19,8 @@
 	if(!$conn)
 	{
 		$_SESSION["message"] = "Error Connecting To The Order Database."; //Error cnnecting to DB
+		header('location:cart.php');
+		exit;
 	}
 	else
 	{
@@ -29,12 +31,16 @@
 	if(!$result)
 		{
 			$_SESSION["message"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
+			header('location:cart.php');
+			exit;
 		}
 	else
 		{
 			$_SESSION["message"] = "Your Order Had Been Placed, Go To Your Account Page To See Your Order History"; //Order Made/Added To Database
 			$_SESSION["movementstore"] = "<a href='store.php'>Click Here To Return To The Store</a>";
 			$_SESSION["movementhome"] = "<a href='main.php'>Click Here To Return To The Main Page</a>";
+			header('location:cart.php');
+			exit;
 		}
 	}
 ?>
