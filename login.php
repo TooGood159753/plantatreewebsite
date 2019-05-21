@@ -17,7 +17,7 @@
 	);
 	
 	//Write query get user database to begin check/
-	$query = "SELECT * FROM users;";
+	$query = "SELECT * FROM user";
 	
 	if(!$conn)
 	{
@@ -27,30 +27,34 @@
 	else
 	{
 		echo "<p>Connection Successful</p>";
-	}
-	/*
+	
+	
 	$result = mysqli_query($conn, $query);
 
 	if(!result)
 		{
 			//auto redirects back to login page (index.php) update text for fail condition
-			header("location:index.php");
+			//header("location:index.php");
+			echo "<p>No Results</p>";
 		}
 	else
 		{
 			//check username and password against results
-			if()
-			{
+			//if()
+			//{
 			//fail conditions goes here and auto redirects back to login page (index.php) update text for fail condition
-			header("location:index.php");
-			}
-			else
-			{
+			//header("location:index.php");
+			//echo "<p>User Found</p>";
+			//}
+			//else
+			//{
 			//redirect to main page (main.php)
-			header("location:main.php");
+			//header("location:main.php");
+			//echo "<p>No User Found</p>";
+			echo "<p>Got Information</p>";
 			}
 		}
 	}
-	*/
+	
 
 ?>
