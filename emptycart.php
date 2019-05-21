@@ -1,0 +1,3 @@
+<?php
+	//emptycart.php
+?>
