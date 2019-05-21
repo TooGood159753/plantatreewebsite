@@ -29,10 +29,10 @@
 </head>
 <body>
 <h1>Plant a Tree </h1>
-<div class="fixed"
+ class="fixed"
 <a href="cart.php">Cart</a><br>
 
-</div>	
+
 
 <a href="profile.php" class="button">Account</a><br>
 
