@@ -35,7 +35,7 @@
 		
 		$result = mysqli_query($conn, $query);
 		
-		/*
+		
 		if(!$result)
 		{
 			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
@@ -48,7 +48,7 @@
 			header('location:cart.php');
 			exit;
 		}
-		*/
+		
 		
 	}
 ?>
