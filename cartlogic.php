@@ -35,7 +35,6 @@
 		
 		$result = mysqli_query($conn, $query);
 		header('location:cart.php');
-		exit;
 		/*
 		if(!$result)
 		{
