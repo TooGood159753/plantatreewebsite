@@ -33,9 +33,9 @@
 	}
 	else
 	{
-	
-	
-	
+		echo "<p>working</p>";
+	}
+	/*
 	$result = mysqli_query($conn, $query);
 
 	if(!$result)
@@ -57,6 +57,7 @@
 			}
 		}
 	}
+	*/
 ?>
 
 </body>
