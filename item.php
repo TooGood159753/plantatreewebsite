@@ -48,6 +48,9 @@
 						echo "<img src='",$row["treeimglnk"],"' alt='",$row["treename"],"' height='300' width='300'>";
 						echo "<h2>",$row["treename"],"</h2>";
 						echo "<p>",$row["treedesc"],"</p>";
+						
+						echo "<a href='main.php'>Home</a>";
+						echo "<a href='store.php'>Store</a>";
 					}
 				}
 				
@@ -61,6 +64,9 @@
 						echo "<img src='",$row["prodimglnk"],"' alt='",$row["productname"],"' height='300' width='300'>";
 						echo "<h2>",$row["productname"],"</h2>";
 						echo "<p>",$row["productdesc"],"</p>";
+						
+						echo "<a href='main.php'>Home</a>";
+						echo "<a href='store.php'>Store</a>";
 					}
 				}
 			}
