@@ -11,9 +11,10 @@
 	}
 
 ?>
-
+<head>
+</head>
 <body>
-<p>login</p>
+<h2>login</h2>
 <a href = "main.php">Main</a>
 <a href = "createaccount.php">Create Account</a>
 
@@ -22,9 +23,9 @@
 <!-- add 'login.php' to action when its ready to do the check -->
 <form method="post" action="login.php">
 		<p>	<label for="uname">Enter User Name: </label>
-			<input type="text" name="uname" id="uname" /></p>
+			<input type="text" placeholder="Enter Username" name="uname" id="uname" /></p>
 		<p>	<label for="pword">Enter Password: </label>
-			<input type="password" name="pword" id="pword" /></p>
+			<input type="password" placeholder="Enter Password" name="pword" id="pword" /></p>
         <p>	<input type="submit" value="Submit" /></p>
 </form>
 
