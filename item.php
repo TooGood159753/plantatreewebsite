@@ -72,7 +72,7 @@
 					}
 				}
 			}
-			echo "<a href='addtocart.php'>Add To Cart</a>";
+			//echo "<a href='addtocart.php'>Add To Cart</a>";
 		}
 	}
 ?>
