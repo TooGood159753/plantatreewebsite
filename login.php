@@ -58,6 +58,8 @@
 			{
 				while($row = mysqli_fetch_assoc($result))
 				{
+					$testcodeno + $row["username"];
+					
 					if($row["username"] == $username && $row["password"] == $password)
 					{
 						$_SESSION["message"] = "User Located</p>";
@@ -69,14 +71,10 @@
 						header('location:main.php');
 						exit;
 					}
-					else
-					{
-						$testcodeno = $testcodeno + $row["username"];
-					}
 				}
 				if(!empty($testcodeno))
 				{
-					$_SESSION["message"] = "Error";
+					$_SESSION["message"] = "You Dont Seem To Be A Member, Why Not Sign Up Now?";
 					header('location:index.php');
 					exit;
 				}
