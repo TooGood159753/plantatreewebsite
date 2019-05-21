@@ -10,7 +10,7 @@
 		$_SESSION["password"] = ""; 
 	}
 
-	$testcodeno = "";
+	$testcodeno = 0;
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -58,7 +58,7 @@
 			{
 				while($row = mysqli_fetch_assoc($result))
 				{
-					$testcodeno + $row["username"];
+					$testcodeno++;
 					
 					if($row["username"] == $username && $row["password"] == $password)
 					{
@@ -72,13 +72,13 @@
 						exit;
 					}
 				}
-				echo "<p>not in database</p>";
-				//if(!empty($testcodeno))
-				//{
-				//	$_SESSION["message"] = "You Dont Seem To Be A Member, Why Not Sign Up Now?";
-				//	header('location:index.php');
-				//	exit;
-				//}
+				//echo "<p>not in database</p>";
+				if($testcodeno > 0)
+				{
+					$_SESSION["message"] = "You Dont Seem To Be A Member, Why Not Sign Up Now?";
+					header('location:index.php');
+					exit;
+				}
 			}
 		}
 	}
