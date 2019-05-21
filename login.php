@@ -69,7 +69,7 @@
 					}
 					else
 					{
-						$testcode = $testcode + 1;
+						$testcode++;
 					}
 				}
 			}
