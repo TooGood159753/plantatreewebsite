@@ -17,7 +17,7 @@
 <a herf="main.php" class="button">Home</a><br>
 </div>	
 
-<a href="profile.php" class="button">Account</a><br>
+<a href="profile.php" class="button2">Account</a><br>
 
 
 
