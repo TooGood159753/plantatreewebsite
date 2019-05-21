@@ -3,10 +3,11 @@
 
 <?php
 	session_start();
+	
+	$_SESSION = array();
+	
+	session_destroy();
+	
+	header('location:index.php');
+	
 ?>
-
-<body>
-<p>logout</p>
-<a href = "index.php">Login</a>
-</body>
-</html>

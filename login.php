@@ -10,7 +10,6 @@
 		$_SESSION["password"] = ""; 
 	}
 
-	$testcode = 0;
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -67,18 +66,7 @@
 						header('location:main.php');
 						exit;
 					}
-					else
-					{
-						$testcode++;
-					}
 				}
-			}
-			else if($testcode > 0)
-			{
-				$_SESSION["message"] = "Not in the System, Signup Now!";
-					
-				header('location:index.php');
-				exit;
 			}
 		}
 	}
