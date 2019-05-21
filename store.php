@@ -61,7 +61,7 @@
 			{
 				echo "<h2>Trees</h2>";
 				echo "<table border='1'>";
-				while($row = $resulttrees-> fetch_assoc()) 
+				while($row = mysqli_fetch_assoc($resulttrees)) 
 				{
 					echo "<tr><td>"+$row["treename"]+"</td><td>"+$row["treetype"]+"</td><td>"+$row["treedesc"]+"</td></tr>";
 				}
@@ -72,7 +72,7 @@
 			{
 				echo "<h2>Gardening Supplies</h2>";
 				echo "<table border='1'>";
-				while($row = $resultgarden-> fetch_assoc()) 
+				while($row = mysqli_fetch_assoc($resultgarden)) 
 				{
 					echo "<tr><td>"+$row["productname"]+"</td><td>"+$row["productdesc"]+"</td></tr>";
 				}
