@@ -1,5 +1,5 @@
 <?php
-	$code = $_GET["id"];
+	$code = $_POST["buying"];
 	
 	echo "<p>",$code,"</p>";
 ?>
