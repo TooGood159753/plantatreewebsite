@@ -5,8 +5,8 @@
 	session_start();
 ?>
 
-<body>
-	<p>index</p>
+<body bgcolor="#E6E6FA">
+
   <a href = "shiplocation.php">Ship Location</a>
   <a href = "profile.php">Profile</a>
   <a href = "logout.php">Logout</a>
