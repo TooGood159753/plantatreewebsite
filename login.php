@@ -40,21 +40,28 @@
 	else
 		{
 			echo "<p>Got Information</p>";
-			if(mysqli_num_rows($result) > 0)
+			if(mysqli_num_rows($result) != 0)
 			{
 				while($row = mysqli_fetch_assoc($result)
 				{
-					if($row["username"] === $username && $row["password"] === $password)
+					if($row["username"] === $username)
 					{
 						echo "<p>Specific User Found</p>";
 					}
-					else
+					else if ($row["username"] === $username)
 					{
 						echo "<p>No User Found</p>";
 					}
+					if($row["password"] === $password)
+					{
+						echo "<p>Password Correct</p>";
+					}
+					else if($row["password"] !== $password)
+					{
+						else "<p>Wrong Password</p>";
+					}
 				}
 			}
-			
 		}
 	}
 	
