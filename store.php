@@ -63,7 +63,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($resulttrees)) 
 				{
-					echo "<tr><td>",$row["treename"],"</td><td>",$row["treetype"],"</td><td>",$row["treedesc"],"</td></tr>";
+					echo "<tr><td>",$row["treename"],"</td><td>",$row["treetype"],"</td><td>",$row["treedesc"],"</td><td><a href='item.php'>Buy</a></td></tr>";
 				}
 				echo "</table>";
 				
@@ -74,7 +74,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($resultgarden)) 
 				{
-					echo "<tr><td>",$row["productname"],"</td><td>",$row["productdesc"],"</td></tr>";
+					echo "<tr><td>",$row["productname"],"</td><td>",$row["productdesc"],"</td><a href=''>Buy</a></td></tr>";
 				}
 				echo "</table>";
 			}
