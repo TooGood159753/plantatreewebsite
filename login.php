@@ -40,18 +40,19 @@
 	else
 		{
 			echo "<p>Got Information</p>";
-			//check username and password against results
-			if($result["username"] == $username && $result["password"] == $password)
+			if(mysqli_num_rows($result) > 0)
 			{
-			//fail conditions goes here and auto redirects back to login page (index.php) update text for fail condition
-			//header("location:index.php");
-			echo "<p>User Found</p>";
-			}
-			else
-			{
-			//redirect to main page (main.php)
-			//header("location:main.php");
-			echo "<p>No User Found</p>";
+				while($row = mysqli_fetch_assoc($result)
+				{
+					if($row["username"] === $username && $row["password"] === $password)
+					{
+						echo "<p>Specific User Found</p>";
+					}
+					else
+					{
+						echo "<p>No User Found</p>";
+					}
+				}
 			}
 			
 		}
