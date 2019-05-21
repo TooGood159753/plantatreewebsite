@@ -10,6 +10,7 @@
 		$_SESSION["password"] = ""; 
 	}
 
+	$testcodeno = "";
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -63,9 +64,21 @@
 						$_SESSION["username"] = $row["username"];
 						$_SESSION["userid"] = $row["userid"];
 						
+						unset($testcodeno);
+						
 						header('location:main.php');
 						exit;
 					}
+					else
+					{
+						$testcodeno = $testcodeno + $row["username"];
+					}
+				}
+				if(!empty($testcodeno))
+				{
+					$_SESSION["message"] = "Error";
+					header('location:index.php');
+					exit;
 				}
 			}
 		}
