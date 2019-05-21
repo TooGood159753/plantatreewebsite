@@ -5,7 +5,7 @@
 
 <?php
 	session_start();
-	$_SESSION["message"] = "";
+	$_SESSION["message"] = " ";
 ?>
 
 <body>
