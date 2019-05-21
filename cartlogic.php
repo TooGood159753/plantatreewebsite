@@ -30,7 +30,7 @@
 	{
 		
 		
-		$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES ('$_SESSION[chosenstore]','$_SESSION[username]','$_SESSION[userid]','$_SESSION[item1]','$_SESSION[item2]','$_SESSION[item3]','$_SESSION[item4]','$_SESSION[rate]')";
+		$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES ('$_SESSION[chosenstore]','$_SESSION[username]','$_SESSION[userid]','$_SESSION[item1]','$_SESSION[item2]','$_SESSION[item3]','$_SESSION[item4]','$rating')";
 		//$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES('test1','test1','1','q1','w1','e1','r1','3')";
 		
 		$result = mysqli_query($conn, $query);
