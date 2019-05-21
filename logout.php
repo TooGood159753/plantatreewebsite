@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-
 <?php
+	//PAGE COMPLETE DO NOT ADJUST UNLESS NEEDED
 	session_start();
 	
 	$_SESSION = array();
