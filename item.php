@@ -67,5 +67,5 @@
 		}
 	}
 	echo "<a href='store.php'>Store</a>";
-	echo "<a href='main.php'>Home</a>
+	echo "<a href='main.php'>Home</a>;
 ?>
