@@ -72,12 +72,13 @@
 						exit;
 					}
 				}
-				if(!empty($testcodeno))
-				{
-					$_SESSION["message"] = "You Dont Seem To Be A Member, Why Not Sign Up Now?";
-					header('location:index.php');
-					exit;
-				}
+				echo "<p>not in database</p>";
+				//if(!empty($testcodeno))
+				//{
+				//	$_SESSION["message"] = "You Dont Seem To Be A Member, Why Not Sign Up Now?";
+				//	header('location:index.php');
+				//	exit;
+				//}
 			}
 		}
 	}
