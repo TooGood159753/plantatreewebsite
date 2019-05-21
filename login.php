@@ -69,11 +69,11 @@
 					}
 					else
 					{
-						$testcode++
+						$testcode = $testcode + 1;
 					}
 				}
 			}
-			else if($testcode != 0)
+			else if($testcode > 0)
 			{
 				$_SESSION["message"] = "Not in the System, Signup Now!";
 					
