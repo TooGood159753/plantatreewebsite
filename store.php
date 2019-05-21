@@ -29,8 +29,8 @@
 </head>
 <body>
 <h1>Plant a Tree </h1>
- class="fixed"
-<a href="cart.php">Cart</a><br>
+ 
+<a href="cart.php" class="fixed">Cart</a><br>
 
 
 
