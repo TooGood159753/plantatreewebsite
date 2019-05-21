@@ -52,7 +52,7 @@
 			//redirect to main page (main.php)
 			//header("location:main.php");
 			echo "<p>No User Found</p>";
-			
+			}
 			
 		}
 	}
