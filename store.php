@@ -4,6 +4,23 @@
 
 <?php
 	session_start();
+	
+	$_SESSION["item1"] = "";
+	$_SESSION["item2"] = "";
+	$_SESSION["item3"] = "";
+	$_SESSION["item4"] = "";
+	
+	$host = "us-cdbr-iron-east-02.cleardb.net";
+	$user = "b74160f7bd6416";
+	$pswd = "3ce40478";
+	$dbnm = "heroku_26350cbea1b7381";
+	
+	$conn = @mysqli_connect($host,
+		$user,
+		$pswd,
+		$dbnm
+	);
+	
 ?>
 <head>
   <title>Tree store</title>
@@ -13,13 +30,45 @@
 <body>
 <h1>Plant a Tree </h1>
 <div class="fixed"
-<a href="store.php">Cart</a><br>
+<a href="cart.php">Cart</a><br>
 
 </div>	
 
 <a href="profile.php" class="button">Account</a><br>
-<!-- <a herf="main.php" class="button">Home</a><br> -->
 
+<?php
+	$querytree = "SELECT * FROM trees";
+	$querygarden = "SELECT * FROM gardening";
+	
+	if(!$conn)
+	{
+		echo "<p>Could Not Retrieve Store Database</p>";
+		exit;
+	}
+	else
+	{
+	
+	$resulttrees = mysqli_query($conn, $query);
+	$resultgarden = mysqli_query($conn, $query);
+
+	if(!$resulttrees || !$resultgarden)
+		{
+			echo "Could Not Retrieve Store Information";
+		}
+	else
+		{
+			if(mysqli_num_rows($resulttrees) > 0)
+			{
+				echo "<table border='1'>";
+				while($row = mysqli_fetch_assoc($result))
+				{
+					echo "<tr><td>".$row["treename"]."</td><td>".$row["treedesc"]."</td></tr>";
+				}
+				echo "</table>";
+			}
+		}
+	}
+?>
 
 </body>
 </html>
