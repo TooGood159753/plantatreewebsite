@@ -7,38 +7,38 @@
 	{
 		if(!isset($_SESSION["item1"]))
 		{
-		$_SESSION["item1"] = $treecode;
+		$_SESSION["item1"] += $treecode;
 		}
 		else if(!isset($_SESSION["item2"]))
 		{
-		$_SESSION["item2"] = $treecode;
+		$_SESSION["item2"] += $treecode;
 		}
 		else if(!isset($_SESSION["item3"]))
 		{
-		$_SESSION["item3"] = $treecode;
+		$_SESSION["item3"] += $treecode;
 		}
 		else if(!isset($_SESSION["item4"]))
 		{
-		$_SESSION["item4"] = $treecode;
+		$_SESSION["item4"] += $treecode;
 		}
 	}
 	if(!empty($gardencode))
 	{
 		if(!isset($_SESSION["item1"]))
 		{
-		$_SESSION["item1"] = $gardencode;
+		$_SESSION["item1"] += $gardencode;
 		}
 		else if(!isset($_SESSION["item2"]))
 		{
-		$_SESSION["item2"] = $gardencode;
+		$_SESSION["item2"] += $gardencode;
 		}
 		else if(!isset($_SESSION["item3"]))
 		{
-		$_SESSION["item3"] = $gardencode;
+		$_SESSION["item3"] += $gardencode;
 		}
 		else if(!isset($_SESSION["item4"]))
 		{
-		$_SESSION["item4"] = $gardencode;
+		$_SESSION["item4"] += $gardencode;
 		}
 	}
 	
