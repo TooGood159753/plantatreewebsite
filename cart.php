@@ -14,7 +14,7 @@
 	
 ?>
 <html>
-<form method="post" action="login.php">
+<form method="post" action="cartlogic.php">
 			<label for="share">How Would You Rate Your Experence?                       </label>
 			<input type="radio" name="rate" id="one" value="1" checked="public"/>Bad
 			<input type="radio" name="rate" id="two" value="2"/>Meh
