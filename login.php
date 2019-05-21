@@ -42,10 +42,10 @@
 			echo "<p>Got Information</p>";
 			if(mysqli_num_rows($result) > 0)
 			{
-				while($row = mysqli_fetch_assoc($result)
-				{
+				//while($row = mysqli_fetch_assoc($result)
+				//{
 					echo "<p>TEST</p>";
-				}
+				//}
 			}
 		}
 	}
