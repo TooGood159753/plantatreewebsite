@@ -33,7 +33,6 @@
 	}
 	else
 	{
-		echo "<p>working</p>";
 	
 	
 	$result = mysqli_query($conn, $query);
@@ -54,6 +53,10 @@
 				}
 				echo "</table>";
 				
+			}
+			else
+			{
+				echo "<p>No Purchases As Of Yet</p>";
 			}
 		}
 	}
