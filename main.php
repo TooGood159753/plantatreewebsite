@@ -13,6 +13,8 @@
   
   <?php
   echo "<p>PHP is working</p>";
+  echo "<p>"+$_SESSION["username"]+"</p>";
+  echo "<p>"+$_SESSION["password"]+"</p>";
   ?>
 </body>
 </html>

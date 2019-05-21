@@ -66,14 +66,14 @@
 						header('location:main.php');
 						exit;
 					}
-					//else
-					//{
-					//	$_SESSION["message"] = "Not in the System, Signup Now!";
-						
-					//	header('location:index.php');
-					//	exit;
-					//}
 				}
+			}
+			else
+			{
+				$_SESSION["message"] = "Not in the System, Signup Now!";
+					
+				header('location:index.php');
+				exit;
 			}
 		}
 	}
