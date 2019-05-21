@@ -70,6 +70,8 @@
 			}
 			if(mysqli_num_rows($resultgarden) > 0)
 			{
+				echo "<h2>Gardening Supplies</h2>";
+				
 				while($row = mysqli_fetch_assoc($resultgarden))
 				{
 					echo "<p>------------------------------------------------------------------------------------------</p>";
