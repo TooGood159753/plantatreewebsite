@@ -21,9 +21,9 @@
 
 <!-- add 'login.php' to action when its ready to do the check -->
 <form method="post" action="login.php">
-		<p>	<label for="uname"><u>Enter User Name:</u> </label><br><br>
+		<p>	<label for="uname">Enter User Name: </label><br><br>
 			<input type="text" placeholder="Enter Username" name="uname" id="uname" /></p>
-		<p>	<label for="pword"><u>Enter Password: </u></label><br><br>
+		<p>	<label for="pword">Enter Password: </label><br><br>
 			<input type="password" placeholder="Enter Password" name="pword" id="pword" /></p>
 		<div>
         <p>	<input type="submit" value="Submit" /></p>
