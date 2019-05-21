@@ -1,5 +1,6 @@
 <?php
-	$code = $_POST["buying"];
+	$buycodetree = $_POST["buyingtree"];
+	$buycodegarden = $_POST["buyinggarden"];
 	
-	echo "<p>",$code,"</p>";
+	echo "<p>",$buycode,"</p>";
 ?>
