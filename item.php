@@ -66,6 +66,7 @@
 						echo "<p>",$row["productdesc"],"</p>";
 						
 						echo "<a href='main.php'>Home</a>";
+						echo "<p>-------</p>";
 						echo "<a href='store.php'>Store</a>";
 					}
 				}
