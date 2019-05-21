@@ -13,9 +13,7 @@
 <a href = "main.php">Main</a>
 <a href = "createaccount.php">Create Account</a>
 
-<?php
-echo "<p>"+$_SESSION["message"]+"</p>";
-?>
+
 
 <!-- add 'login.php' to action when its ready to do the check -->
 <form method="post" action="login.php">
@@ -26,6 +24,9 @@ echo "<p>"+$_SESSION["message"]+"</p>";
         <p>	<input type="submit" value="Submit" /></p>
 </form>
 
+<?php
+echo "<p>"+$_SESSION["message"]+"</p>";
+?>
 	
 </body>
 </html>

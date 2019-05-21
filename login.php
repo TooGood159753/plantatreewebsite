@@ -1,6 +1,8 @@
 <?php
 	session_start();
-	$message = "";
+	$_SESSION["message"] = "";
+	$_SESSION["username"] = "";
+	$_SESSION["userid"] = "";
 
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -21,12 +23,11 @@
 	
 	if(!$conn)
 	{
-		echo "<p>Error Connecting to The User Database, Follow The Link Below To Return To The Login Page</p>";
-		echo "<a href = 'index.php'>Login</a>";
+		$_SESSION["message"] = "Error Connecting to The User Database, Follow The Link Below To Return To The Login Page";
 	}
 	else
 	{
-		echo "<p>Connection Successful</p>";
+		//$_SESSION["message"] = "Connection Successful";
 	
 	
 	$result = mysqli_query($conn, $query);
@@ -35,23 +36,24 @@
 		{
 			//auto redirects back to login page (index.php) update text for fail condition
 			//header("location:index.php");
-			echo "<p>No Results</p>";
+			$_SESSION["message"] = "No Results";
 		}
 	else
 		{
-			echo "<p>Got Information</p>";
 			if(mysqli_num_rows($result) > 0)
 			{
 				while($row = mysqli_fetch_assoc($result))
 				{
 					if($row["username"] == $username && $row["password"] == $password)
 					{
-						echo "<p>User Located</p>";
+						$_SESSION["message"] = "User Located</p>";
+						$_SESSION["username"] = $row["username"];
+						$_SESSION["userid"] = $row["userid"];
 						break;
 					}
 					else
 					{
-						echo "<p>User not located</p>";
+						$_SESSION["message"] = "Not in the System, Signup Now!";
 					}
 				}
 			}
