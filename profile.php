@@ -11,7 +11,7 @@
 <p>Profile</p>
 
 <?php
-	echo "<h1>",$_SESSION["username"],"</h1>;
+	echo "<h1>",$_SESSION["username"],"</h1>";
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
@@ -35,7 +35,7 @@
 	{
 		echo "<p>working</p>";
 	}
-	/*
+	
 	$result = mysqli_query($conn, $query);
 
 	if(!$result)
@@ -57,7 +57,7 @@
 			}
 		}
 	}
-	*/
+	
 ?>
 
 </body>
