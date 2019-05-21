@@ -8,9 +8,9 @@
 	$pswd = "3ce40478";
 	$dbnm = "heroku_26350cbea1b7381";
 	
-	if(isset($_SESSION["message"]))
+	if(isset($_SESSION["messagealt"]))
 	{
-		$_SESSION["message"] = "  ";
+		$_SESSION["messagealt"] = "  ";
 	}
 	
 	$conn = @mysqli_connect($host,
@@ -22,13 +22,13 @@
 	
 	if(!$conn)
 	{
-		$_SESSION["message"] = "Error Connecting To The Order Database."; //Error cnnecting to DB
+		$_SESSION["messagealt"] = "Error Connecting To The Order Database."; //Error cnnecting to DB
 		header('location:cart.php');
 		exit;
 	}
 	else
 	{
-		$_SESSION["message"] = "Connection Successful";
+		$_SESSION["messagealt"] = "Connection Successful";
 		header('location:cart.php');
 		exit;
 		/*

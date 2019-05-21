@@ -2,10 +2,6 @@
 <?php
 	session_start();
 	
-	if(isset($_SESSION["message"]))
-	{
-		$_SESSION["message"] = "  ";
-	}
 	
 	echo "<h2>Your Current Receipt:</h2>";
 	
@@ -33,7 +29,7 @@
 		echo "<p>Or Click Here To Clear Your Cart:</p>";
 		echo "<a href='emptycart.php'>Empty Cart</a>";
 		
-		echo "<p>",$_SESSION["message"],"</p>";
+		echo "<p>",$_SESSION["messagealt"],"</p>";
 	?>
 
 </html>	
