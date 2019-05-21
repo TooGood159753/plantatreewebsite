@@ -3,6 +3,8 @@
 	$treecode = $_POST["buyingtree"];
 	$gardencode = $_POST["buyinggarden"];
 	
+	$_SESSION["chosenstore"] = $_POST["storepass"];
+	
 	if(!empty($treecode))
 	{
 		if(!isset($_SESSION["item1"]))

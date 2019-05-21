@@ -2,6 +2,8 @@
 	session_start();
 	
 	$rating = $_POST["rate"];
+	$_SESSION["chosenstore"] = $_POST["storepass"];
+	
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
