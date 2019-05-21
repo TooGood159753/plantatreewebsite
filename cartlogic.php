@@ -30,10 +30,12 @@
 	{
 		
 		
-		//$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES ('$_SESSION['chosenstore']','$_SESSION['username']','$_SESSION['userid']','$_SESSION['item1']','$_SESSION['item2']','$_SESSION['item3']','$_SESSION['item4']','$_SESSION['rate']')";
-		$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES('test','test','1','q','w','e','r','2')";
+		$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES ('$_SESSION['chosenstore']','$_SESSION['username']','$_SESSION['userid']','$_SESSION['item1']','$_SESSION['item2']','$_SESSION['item3']','$_SESSION['item4']','$_SESSION['rate']')";
+		//$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES('test','test','1','q','w','e','r','2')";
 		
 		$result = mysqli_query($conn, $query);
+		header('location:cart.php');
+		exit;
 		/*
 		if(!$result)
 		{
