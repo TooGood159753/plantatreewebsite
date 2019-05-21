@@ -8,6 +8,10 @@
 	$pswd = "3ce40478";
 	$dbnm = "heroku_26350cbea1b7381";
 	
+	if(isset($_SESSION["message"]))
+	{
+		$_SESSION["message"] = "  ";
+	}
 	
 	$conn = @mysqli_connect($host,
 		$user,
@@ -24,7 +28,7 @@
 	}
 	else
 	{
-		$_SESSION["Message"] = "Connection Successful";
+		$_SESSION["message"] = "Connection Successful";
 		header('location:cart.php');
 		exit;
 		/*
