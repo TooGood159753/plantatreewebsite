@@ -2,11 +2,11 @@
 	
 	session_start();
 	
-	echo $_SESSION["userid"];
-	echo $_SESSION["chosenstore"];
-	echo $_SESSION["item1"];
-	echo $_SESSION["item2"];
-	echo $_SESSION["item3"];
-	echo $_SESSION["item4"];
+	echo "<p>",$_SESSION["userid"],"</p>";
+	echo "<p>",$_SESSION["chosenstore"],"</p>";
+	echo "<p>",$_SESSION["item1"],"</p>";
+	echo "<p>",$_SESSION["item2"],"</p>";
+	echo "<p>",$_SESSION["item3"],"</p>";
+	echo "<p>",$_SESSION["item4"],"</p>";
 	
 ?>
