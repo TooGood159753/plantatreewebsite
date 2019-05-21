@@ -74,7 +74,7 @@
 				echo "<table border='1'>";
 				while($row = $resulttrees-> fetch_assoc()) 
 				{
-					echo "<tr><td>"+$row["treename"]+"</td><td>"+$row["treetype"]+"</td><td>"+$row["treedesc"]+"</td></tr>";
+					echo "<tr><td>"+$row["productname"]+"</td><td>"+$row["productdesc"]+"</td></tr>";
 				}
 				echo "</table>";
 			}
