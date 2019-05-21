@@ -60,22 +60,21 @@
 			if(mysqli_num_rows($resulttrees) > 0)
 			{
 				echo "<h2>Trees</h2>";
-				echo "<table border='1'>";
+				
 				while($row = mysqli_fetch_assoc($resulttrees))
 				{
-					echo "<tr><td>"+$row["treename"]+"</td><tr>"+$row["treetype"]+"</td><td>"+$row["treedesc"]+"</td></tr>";
+					echo "<p>------------------------------------------------------------------------------------------</p>";
+					echo "<p>"+$row["treename"]+$row["treetype"]+$row["treedesc"]+"</p>";
 				}
-				echo "</table>";
+				
 			}
 			if(mysqli_num_rows($resultgarden) > 0)
 			{
-				echo "<h2>Gardening Supplies</h2>";
-				echo "<table border='1'>";
-				while($row = mysqli_fetch_assoc($resulttrees))
+				while($row = mysqli_fetch_assoc($resultgarden))
 				{
-					echo "<tr><td>"+$row["productname"]+"</td><tr>"+$row["productdesc"]+"</td><td>";
+					echo "<p>------------------------------------------------------------------------------------------</p>";
+					echo "<p>"+$row["productname"]+$row["productdesc"]+"</p>";
 				}
-				echo "</table>";
 			}
 		}
 	}
