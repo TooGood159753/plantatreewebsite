@@ -32,7 +32,8 @@
 	{
 		$_SESSION["message"] = "Error Connecting to The User Database, Follow The Link Below To Return To The Login Page";
 		
-		header('location:/index.php');
+		header('location:index.php');
+		exit;
 	}
 	else
 	{
@@ -47,7 +48,8 @@
 			//header("location:index.php");
 			$_SESSION["message"] = "No Results";
 			
-			header('location:/index.php');
+			header('location:index.php');
+			exit;
 		}
 	else
 		{
@@ -61,13 +63,15 @@
 						$_SESSION["username"] = $row["username"];
 						$_SESSION["userid"] = $row["userid"];
 						
-						header('location:/main.php');
+						header('location:main.php');
+						exit;
 					}
 					else
 					{
 						$_SESSION["message"] = "Not in the System, Signup Now!";
 						
-						header('location:/index.php');
+						header('location:index.php');
+						exit;
 					}
 				}
 			}
