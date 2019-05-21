@@ -34,7 +34,8 @@
 		//$query = "INSERT INTO purchase(storename,username,userid,item1,item2,item3,item4,rating) VALUES('test','test','1','q','w','e','r','2')";
 		
 		$result = mysqli_query($conn, $query);
-		exit;
+		
+		echo "<a href='main.php'>Click Here To Return To Main Page</a>";
 		/*
 		if(!$result)
 		{
