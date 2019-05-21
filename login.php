@@ -52,9 +52,8 @@
 			//header("location:main.php");
 			//echo "<p>No User Found</p>";
 			echo "<p>Got Information</p>";
-			}
+			
 		}
 	}
 	
-
 ?>
