@@ -42,10 +42,18 @@
 			echo "<p>Got Information</p>";
 			if(mysqli_num_rows($result) > 0)
 			{
-				//while($row = mysqli_fetch_assoc($result)
-				//{
-					echo "<p>TEST</p>";
-				//}
+				while($row = mysqli_fetch_assoc($result))
+				{
+					if($row["username"] == $username && $row["password"] == $password)
+					{
+						echo "<p>User Located</p>";
+						break;
+					}
+					else
+					{
+						echo "<p>User not located</p>";
+					}
+				}
 			}
 		}
 	}
