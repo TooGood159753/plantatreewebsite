@@ -71,8 +71,7 @@
 
 
 	<?php
-		echo "<p>Or Click Here To Clear Your Cart:</p>";
-		echo "<a href='emptycart.php'>Empty Cart</a>";
+		echo "<a href='profile.php'>View Purchase in Profile</a>";
 		
 		echo "<p>",$_SESSION["messagealt"],"</p>";
 	?>
