@@ -56,7 +56,7 @@
 				</table>
 
 
-<form method="post" action="cart.php">
+<form method="post" action="orderconfirmation.php">
 			<br><br><br>First name:<br>
 			<input type="text" name="firstname">
 			<br>
