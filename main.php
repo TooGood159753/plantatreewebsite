@@ -17,5 +17,7 @@
   echo "<p>",$_SESSION["username"],"</p>";
   echo "<p>",$_SESSION["userid"],"</p>";
   ?>
+  
+  <a href = "shiplocation.php">Ship Location</a>
 </body>
 </html>
