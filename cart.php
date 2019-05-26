@@ -56,6 +56,18 @@
 				</table>
 
 
+<form method="post" action="cart.php">
+			<First name:<br>
+			<input type="text" name="firstname">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname">
+			Address:<br>
+			<input type="text" name="address">
+			<input type = "hidden" name="price" value="100">
+        <p>	<input type="submit" value="Submit" /></p>
+</form>
+
 
 	<?php
 		echo "<p>Or Click Here To Clear Your Cart:</p>";
