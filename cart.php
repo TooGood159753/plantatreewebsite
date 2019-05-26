@@ -57,14 +57,12 @@
 
 
 <form method="post" action="orderconfirmation.php">
-			<br><br><br>First name:<br>
-			<input type="text" name="firstname">
+			<br><br><br> Name:<br>
+			<input type="text" name="name">
 			<br>
-			Last name:<br>
-			<input type="text" name="lastname">
 			<br>Address:<br>
 			<input type="text" name="address">
-			<br>Cash Method
+			<br>Payment Method
 			<input type="text" name="payment">
 			<br>
 			<input type = "hidden" name="price" value="<?php echo $total; ?>">
