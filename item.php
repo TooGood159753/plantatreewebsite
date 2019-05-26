@@ -16,7 +16,7 @@ if(isset($_POST["add_to_cart"]))
 			print_r($_SESSION["shopping_cart"]);
 		}
 	
-	}
+	
 	else
 	{
 		$item_array = array(
