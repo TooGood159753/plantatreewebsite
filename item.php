@@ -126,13 +126,10 @@ if(isset($_POST["add_to_cart"]))
 
 
 <a href="profile.php" class="button">Account</a><br>
-<form method="post" action="item.php?action=add&id=<?php echo "2"; ?>
+<form method="post" action="item.php?action=add&id=<?php echo $row["id"];
+?>">
 <input type="text" name="quantity" value="1" />
-<input type="hidden" name="hidden_name" value="<?php if(mysqli_num_rows($resultgarden) > 0)
-			{ echo $row["productname"]; 
-			}else{
-				echo $row["treename"];
-			}
+<input type="hidden" name="hidden_name" value="<?php echo $row["name"]; 
 ?>
 ">
 

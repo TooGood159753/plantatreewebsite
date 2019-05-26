@@ -65,7 +65,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($resulttrees)) 
 				{
-					echo "<tr><td>",$row["treename"],"</td><td>",$row["treetype"],"</td><td>",$row["treedesc"],"</td><td><form action='item.php' method='post'><input type='hidden' value='",$row["treename"],"', name='buyingtree' ><button>Buy</button></form></td></tr>";
+					echo "<tr><td>",$row["name"],"</td><td>",$row["treetype"],"</td><td>",$row["treedesc"],"</td><td><form action='item.php' method='post'><input type='hidden' value='",$row["name"],"', name='buyingtree' ><button>Buy</button></form></td></tr>";
 				}
 				echo "</table>";
 				
@@ -76,7 +76,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($resultgarden)) 
 				{
-					echo "<tr><td>",$row["productname"],"</td><td>",$row["productdesc"],"</td><td><form action='item.php' method='post'><input type='hidden' value='",$row["productname"],"', name='buyinggarden' ><button>Buy</button></form></td></tr>";
+					echo "<tr><td>",$row["name"],"</td><td>",$row["productdesc"],"</td><td><form action='item.php' method='post'><input type='hidden' value='",$row["name"],"', name='buyinggarden' ><button>Buy</button></form></td></tr>";
 				}
 				echo "</table>";
 			}
