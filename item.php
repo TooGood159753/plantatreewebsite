@@ -84,6 +84,17 @@
 	}
 ?>
 <body bgcolor="#E6E6FA">
+<form method="post" action="cart.php">
+	
+
+					<input type="text" name="quantity" value="1" class="form-control" />
+
+
+					<input type="submit" name="add_to_cart" value="Add to Cart" />
+
+					
+</form>
+
 <a href='main.php'>Home</a>
 <a href='store.php'>Store</a>
 </body>
