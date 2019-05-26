@@ -15,16 +15,13 @@
 		$dbnm
 	);
 	
-	$insert = "INSERT INTO purchase (storename,username,price,userid,address,payment)VALUES($_SESSION["chosenstore"],$_SESSION["username"],$_POST["price"],$_SESSION["userid"]),$_POST["address"], $_POST["payment"]";
+	//$insert = "INSERT INTO purchase(storename,username,price,userid,address,payment)VALUES($_SESSION["chosenstore"],$_SESSION["username"],$_POST["price"],$_SESSION["userid"]),$_POST["address"], $_POST["payment"]";
 	echo "<h2>Your Current Receipt:</h2>";
 	
 	echo "<p>",$_SESSION["chosenstore"],"</p>";
 	echo "<p>",$_SESSION["username"],"</p>";
 	echo "<p>",$_SESSION["userid"],"</p>";
-	echo "<p>",$_SESSION["item1"],"</p>";
-	echo "<p>",$_SESSION["item2"],"</p>";
-	echo "<p>",$_SESSION["item3"],"</p>";
-	echo "<p>",$_SESSION["item4"],"</p>";
+
 	
 ?>
 <html>
