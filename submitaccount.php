@@ -41,7 +41,7 @@
 		if($result)
 		{
 			
-			echo "<p>Created Your Account " + $uname + "</p>";
+			echo "<p>Created Your Account ",$uname,"</p>";
 			echo "<a href = 'index.php'>Return To Login Page</a>";
 		}
 		else
