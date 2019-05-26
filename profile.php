@@ -49,7 +49,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($result)) 
 				{
-					echo "<tr><td>",$row[storename],"</td><td>",$row["username"],"</td><td>",$row["item1"],"</td><td>",$row["item2"],"</td><td>",$row["item3"],"</td><td>",$row["item4"],"</td><td>",$row["rating"],"</td></tr>";
+					echo "<tr><td>",$row[date],"</td><td>",$row[storename],"</td><td>",$row["username"],"</td><td>",$row["price"],"</td><td>",$row["address"],"</td><td>",$row["payment"]/tr>";
 				}
 				echo "</table>";
 				

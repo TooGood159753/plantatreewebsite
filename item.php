@@ -113,8 +113,8 @@ if(isset($_POST["add_to_cart"]))
 						echo "<p>",$row["productdesc"],"</p>";
 						
 					?>
-					 <form method="post" action="item.php">;
-					<input type="text" name="quantity" value="1" />;
+					 <form method="post" action="item.php">
+					<input type="text" name="quantity" value="1" />
 					<input type="hidden" name="hidden_name" value="<?php echo $row["name"];?>">
 					<input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
 					<input type="submit" name="add_to_cart" value="Add to Cart" />
