@@ -131,6 +131,7 @@ if(isset($_POST["add_to_cart"]))
 			{ echo $row["productname"]; 
 			}else{
 				echo $row["treename"];
+			}
 ?>
 ">
 
