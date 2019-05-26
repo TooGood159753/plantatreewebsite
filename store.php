@@ -5,7 +5,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION["chosenstore"])){
-		
+		echo "Is set";
 	}else{
 
 	$_SESSION["chosenstore"] = $_POST["storepass"];
