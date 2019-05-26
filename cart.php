@@ -55,7 +55,7 @@
 						
 				</table>
 
-<?php echo "test"; ?>
+<?php echo $total; ?>
 <form method="post" action="cart.php">
 			<br><br><br>First name:<br>
 			<input type="text" name="firstname">
