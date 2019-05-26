@@ -55,14 +55,14 @@
 						
 				</table>
 
-
+<?php echo $total; ?>
 <form method="post" action="cart.php">
-			<First name:<br>
+			<br><br><br>First name:<br>
 			<input type="text" name="firstname">
 			<br>
 			Last name:<br>
 			<input type="text" name="lastname">
-			Address:<br>
+			<br>Address:<br>
 			<input type="text" name="address">
 			<input type = "hidden" name="price" value="100">
         <p>	<input type="submit" value="Submit" /></p>
