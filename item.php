@@ -1,6 +1,8 @@
 <html>
 <?php
-session_start();
+	session_start();
+	if(isset($_POST["add_to_cart"]))
+	
 	$buycodetree = $_POST["buyingtree"];
 	$buycodegarden = $_POST["buyinggarden"];
 	
@@ -73,8 +75,7 @@ session_start();
 						
 						echo "<a> href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
-						echo "<a href='main.php'>Home</a>";
-						echo "<a href='store.php'>Store</a>";
+						
 					}
 				}
 			}
@@ -83,5 +84,7 @@ session_start();
 	}
 ?>
 <body bgcolor="#E6E6FA">
+<a href='main.php'>Home</a>
+<a href='store.php'>Store</a>
 </body>
 </html>
