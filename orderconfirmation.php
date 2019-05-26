@@ -19,10 +19,10 @@
 	$username = $_SESSION["username"];
 	$userid =$_SESSION["userid"];
 	$price =$_POST["price"];
-	$address =,$_POST["address"];
+	$address =$_POST["address"];
 	$payment= $_POST["payment"];
 	
-	$sql = "INSERT INTO purchase(storename,username,price,userid,address,payment)VALUES('$chosenstore','$username','$price','$userid','$address','$payment']";
+	$sql = "INSERT INTO purchase(storename,username,price,userid,address,payment)VALUES('$chosenstore','$username','$price','$userid','$address','$payment' )";
 	echo "$sql";
 	
 	
