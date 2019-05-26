@@ -126,7 +126,7 @@ if(isset($_POST["add_to_cart"]))
 
 
 <a href="profile.php" class="button">Account</a><br>
-<form method="post" action="index.php?action=add&id=<?php if(mysqli_num_rows($resultgarden) > 0)
+<form method="post" action="item.php?action=add&id=<?php if(mysqli_num_rows($resultgarden) > 0)
 			{ echo $row["purid"]; 
 			}else{
 				echo $row["treeid"];
