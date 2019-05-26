@@ -3,11 +3,24 @@
 	session_start();
 	
 	
+	$host = "us-cdbr-iron-east-02.cleardb.net";
+	$user = "b74160f7bd6416";
+	$pswd = "3ce40478";
+	$dbnm = "heroku_26350cbea1b7381";
+	
+	
+	$conn = @mysqli_connect($host,
+		$user,
+		$pswd,
+		$dbnm
+	);
+	
+	$insert = "INSERT INTO purchase (storename,username,price,userid,address,payment)VALUES($_SESSION["chosenstore"],$_SESSION["username"],$_POST["price"],$_SESSION["userid"]),$_POST["address"], $_POST["payment"]";
 	echo "<h2>Your Current Receipt:</h2>";
 	
 	echo "<p>",$_SESSION["chosenstore"],"</p>";
 	echo "<p>",$_SESSION["username"],"</p>";
-	//echo "<p>",$_SESSION["userid"],"</p>";
+	echo "<p>",$_SESSION["userid"],"</p>";
 	echo "<p>",$_SESSION["item1"],"</p>";
 	echo "<p>",$_SESSION["item2"],"</p>";
 	echo "<p>",$_SESSION["item3"],"</p>";
@@ -35,17 +48,6 @@
 </body>
 </html>	
 	<!--
-	$host = "us-cdbr-iron-east-02.cleardb.net";
-	$user = "b74160f7bd6416";
-	$pswd = "3ce40478";
-	$dbnm = "heroku_26350cbea1b7381";
-	
-	
-	$conn = @mysqli_connect($host,
-		$user,
-		$pswd,
-		$dbnm
-	);
 	
 	
 	if(!$conn)
