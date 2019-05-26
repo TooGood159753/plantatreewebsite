@@ -5,7 +5,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION["chosenstore"])){
-		echo "Is set";
+		
 	}else{
 
 	$_SESSION["chosenstore"] = $_POST["storepass"];
@@ -33,7 +33,7 @@
 <h3>Chosen Store: <?php echo $_SESSION["chosenstore"]; ?></h3>
  
 <a href="cart.php" class="fixed">Cart</a><br>
-
+<a href = "main.php" class="fixed">Home Page</a>
 
 
 <a href="profile.php" class="button">Account</a><br>
