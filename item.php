@@ -82,10 +82,10 @@ if(isset($_POST["add_to_cart"]))
 			{
 				while($row = mysqli_fetch_assoc($resulttrees)) 
 				{
-					if($buycodetree === $row["treename"])
+					if($buycodetree === $row["name"])
 					{
-						echo "<img src='",$row["treeimglnk"],"' alt='",$row["treename"],"' height='300' width='300'>";
-						echo "<h2>",$row["treename"],"</h2>";
+						echo "<img src='",$row["treeimglnk"],"' alt='",$row["name"],"' height='300' width='300'>";
+						echo "<h2>",$row["name"],"</h2>";
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["treedesc"],"</p>";
 						
@@ -98,10 +98,10 @@ if(isset($_POST["add_to_cart"]))
 			{
 				while($row = mysqli_fetch_assoc($resultgarden)) 
 				{
-					if($buycodegarden === $row["productname"])
+					if($buycodegarden === $row["name"])
 					{
-						echo "<img src='",$row["prodimglnk"],"' alt='",$row["productname"],"' height='300' width='300'>";
-						echo "<h2>",$row["productname"],"</h2>";
+						echo "<img src='",$row["prodimglnk"],"' alt='",$row["name"],"' height='300' width='300'>";
+						echo "<h2>",$row["name"],"</h2>";
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["productdesc"],"</p>";
 						
