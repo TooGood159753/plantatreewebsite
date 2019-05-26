@@ -47,11 +47,15 @@
 			{
 				echo "<h2>Purchases</h2>";
 				echo "<table border='1'>";
-				while($row = mysqli_fetch_assoc($result)) 
-				{
-					echo "<tr><td>",$row[storename]"</td></tr>";
+				while($row = mysqli_fetch_array($result)){
+					echo "<tr>";
+					echo "<td>" . $row['date'] . "</td>";
+					echo "<td>" . $row['username'] . "</td>";
+					echo "<td>" . $row['price'] . "</td>";
+					echo "<td>" . $row['address'] . "</td>";
+					echo "<td>" . $row['payment'] . "</td>";
+					echo "</tr>";
 				}
-				echo "</table>";
 				
 			}
 			else
