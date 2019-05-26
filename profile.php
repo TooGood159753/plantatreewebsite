@@ -49,7 +49,7 @@
 				echo "<table border='1'>";
 				while($row = mysqli_fetch_assoc($result)) 
 				{
-					echo "<tr><td>",$row[date]"</td></tr>";
+					echo "<tr><td>",$row["date"]"</td></tr>";
 				}
 				echo "</table>";
 				
