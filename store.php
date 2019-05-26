@@ -33,7 +33,7 @@
 <h3>Chosen Store: <?php echo $_SESSION["chosenstore"]; ?></h3>
  
 <a href="cart.php" class="fixed">Cart</a><br>
-<a href = "main.php" >Home Page</a>
+
 
 
 <a href="profile.php" class="button">Account</a><br>
@@ -83,6 +83,6 @@
 		}
 	}
 ?>
-
+<a href = "main.php">Home Page</a>
 </body>
 </html>
