@@ -55,3 +55,11 @@
 	}
 
 ?>
+
+<html>
+<head>
+</head>
+<body>
+<body bgcolor="#E6E6FA">
+</body>
+</html>
