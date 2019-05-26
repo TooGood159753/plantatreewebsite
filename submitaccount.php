@@ -24,7 +24,7 @@
 	
 	if(!$conn)
 	{
-		$_SESSION["messagealt"] = "Error Connecting To The Order Database."; //Error cnnecting to DB
+		$_SESSION["messagealt"] = "Error Connecting To The Database."; //Error connecting to DB
 		header('location:cart.php');
 		exit;
 	}
@@ -37,21 +37,19 @@
 		
 		$result = mysqli_query($conn, $query);
 		
-		/*
+		
 		if($result)
 		{
 			
-			$_SESSION["messagealt"] = "Your Order Had Been Placed, Go To Your Account Page To See Your Order History"; //Order Made/Added To Database
-			header('location:cart.php');
-			exit;
+			echo "<p>Created Your Account " + $uname + "</p>";
+			echo "<a href = 'index.php'>Return To Login Page</a>";
 		}
 		else
 		{
-			$_SESSION["messagealt"]"Failed To Place Your Order, Please Try Again Later"; //Failed To Input Order
-			header('location:cart.php');
-			exit;
+			echo "<p>Failed to Create Your Account</p> + ";
+			echo "<a href = 'createaccount.php'>Return To Account Creation</a>";
 		}
-		*/
+		
 		
 		
 	}
