@@ -119,7 +119,7 @@ if(isset($_POST["add_to_cart"]))
 
 
 <?php  
-if(isset($resulttrees)){
+if(isset($row)){
     echo 'isset true';
 }else{
     echo 'isset false';
