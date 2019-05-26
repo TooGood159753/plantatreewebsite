@@ -120,9 +120,9 @@ if(isset($_POST["add_to_cart"]))
 
 <?php  
 if(isset($row)){
-    echo 'isset true';
+    echo 'row true';
 }else{
-    echo 'isset false';
+    echo 'row false';
 }
  
 ?>
