@@ -25,7 +25,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
+<body bgcolor="#E6E6FA">
+
 <h1>Plant a Tree </h1>
 <h3>Chosen Store: <?php echo $_SESSION["chosenstore"]; ?></h3>
  

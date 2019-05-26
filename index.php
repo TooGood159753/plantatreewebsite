@@ -15,7 +15,6 @@
 
 </head>
 <body bgcolor="#E6E6FA">
-<a href = "main.php">Main</a>
 <a href = "createaccount.php">Create Account</a>
 <h2><u>Login</u></h2>
 
@@ -30,9 +29,7 @@
 		</div>
 </form>
 
-<?php
-	echo "<p>",$_SESSION["message"],"</p>";
-?>
+
 	
 </body>
 </html>

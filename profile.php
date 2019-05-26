@@ -5,13 +5,13 @@
 	session_start();
 ?>
 
-<body>
+<body bgcolor="#E6E6FA">
 <a href = "main.php">Main</a>
 <a href = "index.php">Logout</a>
 <p>Profile</p>
 
 <?php
-	echo "<h1>",$_SESSION["username"],"</h1>";
+	echo "<h1>Hello, ",$_SESSION["username"],"</h1>";
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";

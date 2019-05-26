@@ -1,3 +1,4 @@
+<html>
 <?php
 	$buycodetree = $_POST["buyingtree"];
 	$buycodegarden = $_POST["buyinggarden"];
@@ -76,3 +77,6 @@
 		}
 	}
 ?>
+<body bgcolor="#E6E6FA">
+</body>
+</html>
