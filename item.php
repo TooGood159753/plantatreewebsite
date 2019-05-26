@@ -119,10 +119,12 @@ if(isset($_POST["add_to_cart"]))
 
 
 <?php  
-if(isset($row)){
-    echo 'row true';
-}else{
-    echo 'row false';
+if(mysqli_num_rows($resulttrees) > 0){
+	$row = mysqli_fetch_assoc($resulttrees);
+}
+if(mysqli_num_rows($resultgarden) > 0){
+	
+	$row = mysqli_fetch_assoc($resultgarden);
 }
  
 ?>
