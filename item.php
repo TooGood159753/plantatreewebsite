@@ -67,13 +67,14 @@
 						echo "<h2>",$row["productname"],"</h2>";
 						echo "<p>",$row["productdesc"],"</p>";
 						
-						echo "<a href='main.php'>Home</a>";
+						echo "<a href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
+						echo "<a href='main.php'>Home</a>";
 						echo "<a href='store.php'>Store</a>";
 					}
 				}
 			}
-			echo "<a href='addtocart.php'>Add To Cart</a>";
+			
 		}
 	}
 ?>
