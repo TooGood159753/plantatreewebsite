@@ -1,5 +1,6 @@
 <html>
 <?php
+session_start();
 	$buycodetree = $_POST["buyingtree"];
 	$buycodegarden = $_POST["buyinggarden"];
 	
@@ -52,7 +53,7 @@
 						echo "<p>",$row["treedesc"],"</p>";
 						
 						echo "<a href='main.php'>Home</a>";
-						echo "<a> href='addtocart.php'>Add To Cart</a>";
+						echo "<a href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
 						echo "<a href='store.php'>Store</a>";
 					}
