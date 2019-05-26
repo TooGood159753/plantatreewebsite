@@ -29,6 +29,8 @@
 		</div>
 </form>
 
+Default Username: tester
+Default Password: 123
 
 	
 </body>
