@@ -45,8 +45,14 @@
 		{
 			if(mysqli_num_rows($result) > 0)
 			{
-				echo "<h2>Purchases</h2>";
-				echo "<table border='1'>";
+				 echo "<table>";
+				echo "<tr>";
+                echo "<th>Date</th>";
+                echo "<th>Username</th>";
+                echo "<th>Price</th>";
+                echo "<th>Address</th>";
+				echo "<th>Payment</th>";
+				echo "</tr>";
 				while($row = mysqli_fetch_array($result)){
 					echo "<tr>";
 					echo "<td>" . $row['date'] . "</td>";
