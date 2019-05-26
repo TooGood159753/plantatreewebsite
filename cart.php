@@ -55,7 +55,7 @@
 						
 				</table>
 
-<?php echo $total; ?>
+
 <form method="post" action="cart.php">
 			<br><br><br>First name:<br>
 			<input type="text" name="firstname">
@@ -64,7 +64,10 @@
 			<input type="text" name="lastname">
 			<br>Address:<br>
 			<input type="text" name="address">
-			<input type = "hidden" name="price" value="100">
+			<br>Cash Method
+			<input type="text" name="payment">
+			<br>
+			<input type = "hidden" name="price" value="<?php echo $total; ?>">
         <p>	<input type="submit" value="Submit" /></p>
 </form>
 
