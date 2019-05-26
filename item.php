@@ -119,16 +119,9 @@ if(isset($_POST["add_to_cart"]))
 
 
 <?php  
-$usecase;
-if(mysqli_num_rows($resulttrees) > 0){
-	$usecase = $resulttrees;
-}
-if(mysqli_num_rows($resultgarden) > 0){
-	
-	$usecase = $resultgarden;
-}
+
  
-while($row = mysqli_fetch_array($usecase))
+while($row = mysqli_fetch_array($resulttrees))
 					{
 ?>
 <a href="profile.php" class="button">Account</a><br>
