@@ -21,7 +21,10 @@
 	echo "<p>",$_SESSION["chosenstore"],"</p>";
 	echo "<p>",$_SESSION["username"],"</p>";
 	echo "<p>",$_SESSION["userid"],"</p>";
-
+	echo "<p>",$_POST["price"],"</p>";
+	echo "<p>",$_POST["address"],"</p>";
+	echo "<p>",$_POST["payment"],"</p>";
+	
 	
 ?>
 <html>
