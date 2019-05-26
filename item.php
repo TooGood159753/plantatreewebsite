@@ -13,7 +13,7 @@ if(isset($_POST["add_to_cart"]))
 				'item_quantity'		=>	$_POST["quantity"]
 			);
 			$_SESSION["shopping_cart"][$count] = $item_array;
-			print_r($_SESSION["shopping_cart"]);
+			echo "item added to cart";
 		}
 	
 	
@@ -25,7 +25,7 @@ if(isset($_POST["add_to_cart"]))
 			'item_quantity'		=>	$_POST["quantity"]
 		);
 		$_SESSION["shopping_cart"][0] = $item_array;
-		print_r($_SESSION["shopping_cart"]);
+		
 		echo "item added to cart";
 	}
 }

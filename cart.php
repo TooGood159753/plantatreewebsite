@@ -3,19 +3,21 @@
 	session_start();
 	
 	
-	echo "<h2>Your Current Receipt:</h2>";
-	
-	echo "<p>",$_SESSION["chosenstore"],"</p>";
-	echo "<p>",$_SESSION["username"],"</p>";
-	//echo "<p>",$_SESSION["userid"],"</p>";
-	echo "<p>",$_SESSION["item1"],"</p>";
-	echo "<p>",$_SESSION["item2"],"</p>";
-	echo "<p>",$_SESSION["item3"],"</p>";
-	echo "<p>",$_SESSION["item4"],"</p>";
+	echo "<h2>Your Current Order:</h2>";
+
 	
 ?>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body bgcolor="#E6E6FA">
+
+<a href="profile.php" class="button">Account</a><br>
+
+
+<a href='main.php'>Home</a>
+<a href='store.php'>Store</a>
 <table class="table table-bordered">
 					<tr>
 						<th width="40%">Item Name</th>
@@ -54,14 +56,16 @@
 				</table>
 
 
-
-<form method="post" action="cartlogic.php">
-			<label for="share">How Would You Rate Your Experence?                       </label>
-			<input type="radio" name="rate" id="one" value="1" checked="public"/>Bad
-			<input type="radio" name="rate" id="two" value="2"/>Meh
-			<input type="radio" name="rate" id="three" value="3"/>Decent
-			<input type="radio" name="rate" id="four" value="4"/>Good
-			<input type="radio" name="rate" id="five" value="5"/>Amazing
+<?php echo $total ?>
+<form method="post" action="cart.php">
+			<First name:<br>
+			<input type="text" name="firstname">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname">
+			Address:<br>
+			<input type="text" name="address">
+			<input type = "hidden" name="price" value="<?php $total" ?> ">
         <p>	<input type="submit" value="Submit" /></p>
 </form>
 
