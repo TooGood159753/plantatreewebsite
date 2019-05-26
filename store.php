@@ -4,10 +4,12 @@
 
 <?php
 	session_start();
-	
+	if(isset($_SESSION["chosenstore"])){
+		
+	}else{
 
 	$_SESSION["chosenstore"] = $_POST["storepass"];
-	
+	}
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";
 	$pswd = "3ce40478";
