@@ -125,7 +125,7 @@ if(isset($resulttrees)){
     echo 'isset false';
 }
  
-echo "test";?>
+?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
