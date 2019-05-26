@@ -75,8 +75,7 @@
 						
 						echo "<a> href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
-						echo "<a href='main.php'>Home</a>";
-						echo "<a href='store.php'>Store</a>";
+						
 					}
 				}
 			}
@@ -85,5 +84,7 @@
 	}
 ?>
 <body bgcolor="#E6E6FA">
+<a href='main.php'>Home</a>
+<a href='store.php'>Store</a>
 </body>
 </html>
