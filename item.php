@@ -87,6 +87,7 @@ if(isset($_POST["add_to_cart"]))
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["treedesc"],"</p>";
 						
+						
 
 					}
 				}
@@ -117,7 +118,7 @@ if(isset($_POST["add_to_cart"]))
 <a href="cart.php" class="fixed">Cart</a><br>
 
 
-
+<?php  echo $host;?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
@@ -128,6 +129,7 @@ if(isset($_POST["add_to_cart"]))
 					
 </form>
 
+<?php ?>
 <a href='main.php'>Home</a>
 <a href='store.php'>Store</a>
 </body>
