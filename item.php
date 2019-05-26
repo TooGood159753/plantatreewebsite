@@ -128,9 +128,9 @@ if(mysqli_num_rows($resultgarden) > 0){
 	$usecase = $resultgarden;
 }
  
-//while($row = mysqli_fetch_array($usecase))
-					//{
-				//?>
+while($row = mysqli_fetch_array($usecase))
+					{
+?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
@@ -141,7 +141,7 @@ if(mysqli_num_rows($resultgarden) > 0){
 					
 </form>
 
-					<?php //} ?>
+					<?php } ?>
 <a href='main.php'>Home</a>
 <a href='store.php'>Store</a>
 </body>
