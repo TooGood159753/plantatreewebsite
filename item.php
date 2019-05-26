@@ -120,7 +120,8 @@ if(isset($_POST["add_to_cart"]))
 
 <?php  
 $isTouch = empty($resultgarden);
-echo $isTouch; ?>
+echo $isTouch; 
+echo "test";?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
