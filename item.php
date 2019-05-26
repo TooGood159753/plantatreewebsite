@@ -118,12 +118,7 @@ if(isset($_POST["add_to_cart"]))
 <a href="cart.php" class="fixed">Cart</a><br>
 
 
-<?php  
 
- 
-while($row = mysqli_fetch_array($resulttrees))
-					{
-?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
@@ -134,7 +129,7 @@ while($row = mysqli_fetch_array($resulttrees))
 					
 </form>
 
-					<?php } ?>
+					
 <a href='main.php'>Home</a>
 <a href='store.php'>Store</a>
 </body>
