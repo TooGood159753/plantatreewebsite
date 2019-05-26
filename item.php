@@ -118,7 +118,9 @@ if(isset($_POST["add_to_cart"]))
 <a href="cart.php" class="fixed">Cart</a><br>
 
 
-<?php  $resulttrees ?>
+<?php  
+$isTouch = empty($resultgarden);
+echo $isTouch; ?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
 <input type="text" name="quantity" value="1" />
