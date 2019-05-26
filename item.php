@@ -1,7 +1,7 @@
 <html>
 <?php
 	session_start();
-	if(isset($_POST["add_to_cart"]))
+	
 	
 	$buycodetree = $_POST["buyingtree"];
 	$buycodegarden = $_POST["buyinggarden"];
