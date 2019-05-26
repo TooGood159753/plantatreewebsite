@@ -29,8 +29,13 @@ if(isset($_POST["add_to_cart"]))
 		echo "item added to cart";
 	}
 }
+?>
 
-
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#E6E6FA">
+<?php
 	$buycodetree = $_POST["buyingtree"];
 	$buycodegarden = $_POST["buyinggarden"];
 	
@@ -108,11 +113,6 @@ if(isset($_POST["add_to_cart"]))
 		}
 	}
 ?>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body bgcolor="#E6E6FA">
-
 
 <a href="cart.php" class="fixed">Cart</a><br>
 
