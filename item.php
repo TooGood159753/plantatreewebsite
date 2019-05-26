@@ -48,6 +48,7 @@
 					{
 						echo "<img src='",$row["treeimglnk"],"' alt='",$row["treename"],"' height='300' width='300'>";
 						echo "<h2>",$row["treename"],"</h2>";
+						echo "<h2>",$row["price"],"</h2>";
 						echo "<p>",$row["treedesc"],"</p>";
 						
 						echo "<a href='main.php'>Home</a>";
