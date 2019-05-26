@@ -15,6 +15,7 @@
 	
 ?>
 <html>
+<body bgcolor="#E6E6FA">
 <form method="post" action="cartlogic.php">
 			<label for="share">How Would You Rate Your Experence?                       </label>
 			<input type="radio" name="rate" id="one" value="1" checked="public"/>Bad
@@ -31,7 +32,7 @@
 		
 		echo "<p>",$_SESSION["messagealt"],"</p>";
 	?>
-
+</body>
 </html>	
 	<!--
 	$host = "us-cdbr-iron-east-02.cleardb.net";
