@@ -11,6 +11,7 @@ if(isset($_POST["add_to_cart"]))
 		{
 			$count = count($_SESSION["shopping_cart"]);
 			$item_array = array(
+				'item_id'			=>	$_GET["id"],
 				'item_name'			=>	$_POST["hidden_name"],
 				'item_price'		=>	$_POST["hidden_price"],
 				'item_quantity'		=>	$_POST["quantity"]
@@ -26,6 +27,7 @@ if(isset($_POST["add_to_cart"]))
 	else
 	{
 		$item_array = array(
+			'item_id'			=>	$_GET["id"],
 			'item_name'			=>	$_POST["hidden_name"],
 			'item_price'		=>	$_POST["hidden_price"],
 			'item_quantity'		=>	$_POST["quantity"]
@@ -124,8 +126,12 @@ if(isset($_POST["add_to_cart"]))
 
 
 <a href="profile.php" class="button">Account</a><br>
-<form method="post" action="item.php">
-	
+<form method="post" action="index.php?action=add&id=<?php if(mysqli_num_rows($resultgarden) > 0)
+			{ echo $row["purid"]; 
+			}else{
+				echo $row["treeid"];
+			}
+?>">
 <input type="text" name="quantity" value="1" />
 <input type="hidden" name="hidden_name" value="<?php if(mysqli_num_rows($resultgarden) > 0)
 			{ echo $row["productname"]; 
