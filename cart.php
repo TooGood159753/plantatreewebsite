@@ -58,12 +58,12 @@
 
 <form method="post" action="orderconfirmation.php">
 			<br><br><br> Name:<br>
-			<input type="text" name="name">
-			<br>
+			<input type="text" name="name" required>
+		
 			<br>Address:<br>
-			<input type="text" name="address">
-			<br>Payment Method
-			<input type="text" name="payment">
+			<input type="text" name="address" required>
+			<br>Payment Method<br>
+			<input type="text" name="payment" required>
 			<br>
 			<input type = "hidden" name="price" value="<?php echo $total; ?>">
         <p>	<input type="submit" value="Submit" /></p>
@@ -71,7 +71,7 @@
 
 
 	<?php
-		echo "<a href='profile.php'>View Purchase in Profile</a>";
+		
 		
 		echo "<p>",$_SESSION["messagealt"],"</p>";
 	?>
