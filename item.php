@@ -119,8 +119,12 @@ if(isset($_POST["add_to_cart"]))
 
 
 <?php  
-$isTouch = empty($resultgarden);
-echo $isTouch; 
+if(isset($resulttrees)){
+    echo 'isset true';
+}else{
+    echo 'isset false';
+}
+ 
 echo "test";?>
 <a href="profile.php" class="button">Account</a><br>
 <form method="post" action="item.php">
