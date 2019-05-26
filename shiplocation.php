@@ -2,7 +2,6 @@
 <html>
 
 <?php
-	session_start();
 	
 	$host = "us-cdbr-iron-east-02.cleardb.net";
 	$user = "b74160f7bd6416";

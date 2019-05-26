@@ -52,6 +52,7 @@
 						echo "<p>",$row["treedesc"],"</p>";
 						
 						echo "<a href='main.php'>Home</a>";
+						echo "<a> href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
 						echo "<a href='store.php'>Store</a>";
 					}
@@ -69,7 +70,7 @@
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["productdesc"],"</p>";
 						
-						echo "<a href='addtocart.php'>Add To Cart</a>";
+						echo "<a> href='addtocart.php'>Add To Cart</a>";
 						echo "<p>-------</p>";
 						echo "<a href='main.php'>Home</a>";
 						echo "<a href='store.php'>Store</a>";
