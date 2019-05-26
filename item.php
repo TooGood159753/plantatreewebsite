@@ -6,33 +6,26 @@ if(isset($_POST["add_to_cart"]))
 {
 	if(isset($_SESSION["shopping_cart"]))
 	{
-		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
-		if(!in_array($_GET["id"], $item_array_id))
-		{
 			$count = count($_SESSION["shopping_cart"]);
 			$item_array = array(
-				'item_id'			=>	$_GET["id"],
 				'item_name'			=>	$_POST["hidden_name"],
 				'item_price'		=>	$_POST["hidden_price"],
 				'item_quantity'		=>	$_POST["quantity"]
 			);
 			$_SESSION["shopping_cart"][$count] = $item_array;
-			echo "item added to cart";
+			print_r($_SESSION["shopping_cart"]);
 		}
-		else
-		{
-			echo '<script>alert("Item Already Added")</script>';
-		}
+	
 	}
 	else
 	{
 		$item_array = array(
-			'item_id'			=>	$_GET["id"],
 			'item_name'			=>	$_POST["hidden_name"],
 			'item_price'		=>	$_POST["hidden_price"],
 			'item_quantity'		=>	$_POST["quantity"]
 		);
 		$_SESSION["shopping_cart"][0] = $item_array;
+		print_r($_SESSION["shopping_cart"]);
 		echo "item added to cart";
 	}
 }
@@ -126,13 +119,9 @@ if(isset($_POST["add_to_cart"]))
 
 
 <a href="profile.php" class="button">Account</a><br>
-<form method="post" action="item.php?action=add&id=<?php echo $row["id"];
-?>">
+<form method="post" action="item.php
 <input type="text" name="quantity" value="1" />
-<input type="hidden" name="hidden_name" value="<?php echo $row["name"]; 
-?>
-">
-
+<input type="hidden" name="hidden_name" value="<?php echo $row["name"];?>">
 <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
 <input type="submit" name="add_to_cart" value="Add to Cart" />
 
