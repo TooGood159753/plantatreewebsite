@@ -54,10 +54,7 @@
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["treedesc"],"</p>";
 						
-						echo "<a href='main.php'>Home</a>";
-						echo "<p><a href='addtocart.php'>Add To Cart</a>";
-						echo "<p>-------</p>";
-						echo "<a href='store.php'>Store</a>";
+
 					}
 				}
 				
@@ -73,8 +70,8 @@
 						echo "<h3>$",$row["price"],"</h3>";
 						echo "<p>",$row["productdesc"],"</p>";
 						
-						echo "<a> href='addtocart.php'>Add To Cart</a>";
-						echo "<p>-------</p>";
+					
+						
 						
 					}
 				}
@@ -83,14 +80,22 @@
 		}
 	}
 ?>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body bgcolor="#E6E6FA">
+
+
+<a href="cart.php" class="fixed">Cart</a><br>
+
+
+
+<a href="profile.php" class="button">Account</a><br>
 <form method="post" action="cart.php">
 	
+<input type="text" name="quantity" value="1" />
 
-					<input type="text" name="quantity" value="1" class="form-control" />
-
-
-					<input type="submit" name="add_to_cart" value="Add to Cart" />
+<input type="submit" name="add_to_cart" value="Add to Cart" />
 
 					
 </form>
