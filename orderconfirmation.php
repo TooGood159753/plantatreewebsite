@@ -14,7 +14,7 @@
 		$pswd,
 		$dbnm
 	);
-	
+
 	$chosenstore = $_SESSION["chosenstore"];
 	$username = $_SESSION["username"];
 	$userid =$_SESSION["userid"];
@@ -23,7 +23,11 @@
 	$payment= $_POST["payment"];
 	
 	$sql = "INSERT INTO purchase(storename,username,price,userid,address,payment)VALUES('$chosenstore','$username','$price','$userid','$address','$payment' )";
-	echo "$sql";
+	if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 	
 	
 	
